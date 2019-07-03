@@ -1,0 +1,178 @@
+<!DOCTYPE html><html>
+<head>
+<title>2.1 The Navier-Stokes Equations‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics</title>
+<!--Generated on Wed Jul  3 10:18:22 2019 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on  .-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="fluids.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="up" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="up up" href="." title="Introduction to Fluid Dynamics">
+<link rel="start" href="." title="Introduction to Fluid Dynamics">
+<link rel="prev" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="next" href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="." title="Introduction to Fluid Dynamics" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_document">
+<a href="." title="Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<ul class="ltx_toclist ltx_toclist_document">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>The Navier-Stokes Equations</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS1" title="2.1.1 Cartesian Coordinates ‣ 2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1.1 </span>Cartesian Coordinates</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Circular Flow</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Transport of Vorticity</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Advanced Topics 1: Deriving the Navier-Stokes Equations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.6 </span>Advanced Topics 2: Boundary Layers</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Problems</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Ideal Fluids</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a><a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a><a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2.1 </span>The Navier-Stokes Equations</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">We’ve discussed a lot of different flows – about a stagnation point, a shear flow, a line vortex flow – but we haven’t yet talked about how we <em class="ltx_emph">find</em> <math id="p1.m1" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math>. That is, after all, the whole goal of fluid dynamics!</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">In short (and we’ll come back to this in Section <a href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.5</span></a> for a full derivation), fluid dynamics is governed by the Navier-Stokes equations,</p>
+<table id="Ch2.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E1.m1" class="ltx_Math" alttext="\boxed{\frac{D\mathbf{u}}{Dt}=-\frac{1}{\rho}\boldsymbol{\nabla}p+\nu\nabla^{2%
+}\mathbf{u}+\mathbf{g}.}" display="block"><menclose notation="box"><mrow><mfrac><mrow><mi>D</mi><mo>⁢</mo><mi>𝐮</mi></mrow><mrow><mi>D</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mi>ρ</mi></mfrac><mo mathvariant="bold">∇</mo><mi>p</mi><mo>+</mo><mi>ν</mi><msup><mo>∇</mo><mn>2</mn></msup><mi>𝐮</mi><mo>+</mo><mi>𝐠</mi><mo>.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We can recognize some of what’s there – the kinematic viscosity <math id="p2.m1" class="ltx_Math" alttext="\nu" display="inline"><mi>ν</mi></math> we’ve already talked about, and the acceleration is the left hand side. In addition, there’s also:</p>
+<ul id="Ch2.I1" class="ltx_itemize">
+<li id="Ch2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="Ch2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph">density</em> of the fluid, <math id="Ch2.I1.i1.p1.m1" class="ltx_Math" alttext="\rho(\mathbf{x},t)" display="inline"><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>. If the fluid is incompressible, this is a constant in both space and time.</p>
+</div>
+</li>
+<li id="Ch2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="Ch2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph">pressure</em> of the fluid, <math id="Ch2.I1.i2.p1.m1" class="ltx_Math" alttext="p(\mathbf{x},t)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>. This is a scalar function and usually not uniform throughout the fluid. Pressure is probably familiar to you, but we’ll come back to it and properly define it when we derive the Navier-Stokes equations.</p>
+</div>
+</li>
+<li id="Ch2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="Ch2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The gravitational field <math id="Ch2.I1.i3.p1.m1" class="ltx_Math" alttext="\mathbf{g}" display="inline"><mi>𝐠</mi></math>. Usually – but not always – we’ll be dealing with fluids at the surface of the Earth, and define our coordinate system so that <math id="Ch2.I1.i3.p1.m2" class="ltx_Math" alttext="\mathbf{g}=[0,0,-g]" display="inline"><mrow><mi>𝐠</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mrow><mo>-</mo><mi>g</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></math> where <math id="Ch2.I1.i3.p1.m3" class="ltx_Math" alttext="g=9.8" display="inline"><mrow><mi>g</mi><mo>=</mo><mn>9.8</mn></mrow></math> m/s<math id="Ch2.I1.i3.p1.m4" class="ltx_Math" alttext="{}^{2}" display="inline"><msup><mi></mi><mn>2</mn></msup></math> as usual.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The Navier-Stokes equations, named after Claude-Louis Navier and George Gabriel Stokes who (independently) derived them, are famously difficult to solve – they’re a set of coupled nonlinear second order partial differential equations. In fact, showing that solutions to the Navier-Stokes equations always exist and are smooth is one of the seven ‘‘Millennium Prize Problems’’ from the Clay Mathematics Institute. We won’t be doing anything so difficult here; for some simple situations, the equations are readily solvable, even if they require some thought and a few tricks.
+</p>
+</div>
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1.1 </span>Cartesian Coordinates</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">We’ll begin with flows that are best described by the usual Cartesian coordinates <math id="SS1.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, <math id="SS1.p1.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, and <math id="SS1.p1.m3" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>. In this coordinate system, the Navier-Stokes equations take on the form</p>
+<table id="Ch3.Sx1.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E2.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial{u}}{\partial{t}}+u\frac{\partial{u}}{\partial{x}}+%
+v\frac{\partial{u}}{\partial{y}}+w\frac{\partial{u}}{\partial{z}}=-\frac{1}{%
+\rho}\frac{\partial{p}}{\partial{x}}+\nu\left(\frac{\partial^{2}{u}}{\partial{%
+x}^{2}}+\frac{\partial^{2}{u}}{\partial{y}^{2}}+\frac{\partial^{2}{u}}{%
+\partial{z}^{2}}\right)+g_{x}," display="inline"><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mi>u</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>v</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>w</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>x</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.2)</span></td>
+</tr>
+<tr id="Ch2.E3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E3.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial{v}}{\partial{t}}+u\frac{\partial{v}}{\partial{x}}+%
+v\frac{\partial{v}}{\partial{y}}+w\frac{\partial{v}}{\partial{z}}=-\frac{1}{%
+\rho}\frac{\partial{p}}{\partial{y}}+\nu\left(\frac{\partial^{2}{v}}{\partial{%
+x}^{2}}+\frac{\partial^{2}{v}}{\partial{y}^{2}}+\frac{\partial^{2}{v}}{%
+\partial{z}^{2}}\right)+g_{y}," display="inline"><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mi>u</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>v</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>w</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>y</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.3)</span></td>
+</tr>
+<tr id="Ch2.E4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E4.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial{w}}{\partial{t}}+u\frac{\partial{w}}{\partial{x}}+%
+v\frac{\partial{w}}{\partial{y}}+w\frac{\partial{w}}{\partial{z}}=-\frac{1}{%
+\rho}\frac{\partial{p}}{\partial{z}}+\nu\left(\frac{\partial^{2}{w}}{\partial{%
+x}^{2}}+\frac{\partial^{2}{w}}{\partial{y}^{2}}+\frac{\partial^{2}{w}}{%
+\partial{z}^{2}}\right)+g_{z}." display="inline"><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mi>u</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>v</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>w</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>z</mi></msub></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.4)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Furthermore, we’ll assume our fluids are <em class="ltx_emph">incompressible</em>, so that they must also satisfy the incompressibility condition, Equation <a href="Ch1.S5.html#Ch1.E11" title="(1.11) ‣ 1.5.1 The Incompressibility Condition ‣ 1.5 Incompressible and Irrotational Flow ‣ Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11</span></a>, which in Cartesian coordinates is</p>
+<table id="Ch2.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E5.m1" class="ltx_Math" alttext="\frac{\partial{u}}{\partial{x}}+\frac{\partial{v}}{\partial{y}}+\frac{\partial%
+{w}}{\partial{z}}=0." display="block"><mrow><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>w</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.5)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Those are an impressively complicated looking set of equations. To solve them, however, we’ll first make some assumptions based on the <em class="ltx_emph">physical</em> nature of the problem we’re examining; as we’ll see in a moment, that will allow us to remove some terms and will simplify things considerably.</p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a><a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Wed Jul  3 10:18:22 2019 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

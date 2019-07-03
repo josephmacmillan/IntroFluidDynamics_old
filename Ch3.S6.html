@@ -1,0 +1,363 @@
+<!DOCTYPE html><html>
+<head>
+<title>3.6 Example: Flow Past a Cylinder‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics</title>
+<!--Generated on Wed Jul  3 10:18:22 2019 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on  .-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="fluids.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="up" href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="up up" href="." title="Introduction to Fluid Dynamics">
+<link rel="start" href="." title="Introduction to Fluid Dynamics">
+<link rel="prev" href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="next" href="Ch3.Sx1.html" title="Problems ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.S1.html" title="3.1 Static Fluids ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.S2.html" title="3.2 Bernoulli’s Principle ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.S3.html" title="3.3 The Vorticity Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.S4.html" title="3.4 Example: Uniformly Rotating Fluid ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch3.Sx1.html" title="Problems ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="." title="Introduction to Fluid Dynamics" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_document">
+<a href="." title="Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<ul class="ltx_toclist ltx_toclist_document">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Ideal Fluids</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.S1.html" title="3.1 Static Fluids ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Static Fluids</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.S2.html" title="3.2 Bernoulli’s Principle ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Bernoulli’s Principle</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.S3.html" title="3.3 The Vorticity Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>The Vorticity Equation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.S4.html" title="3.4 Example: Uniformly Rotating Fluid ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Example: Uniformly Rotating Fluid</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>The Velocity Potential and Laplace’s Equation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6 </span>Example: Flow Past a Cylinder</span></span></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.Sx1.html" title="Problems ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Problems</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Ideal Fluids</span></a><a href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>The Velocity Potential and Laplace’s Equation</span></a><a href="Ch3.Sx1.html" title="Problems ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title">Problems</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.6 </span>Example: Flow Past a Cylinder</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">For our last example, we’ll tackle a more difficult problem – the ideal flow past a cylinder oriented perpendicular to the flow.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We’ll start with a few basic assumptions. First, this will be treated as two dimensional flow, which means the cylinder is effectively infinitely long. We’ll put the cylinder, which has a radius <math id="p2.m1" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>, along the <math id="p2.m2" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>-axis, and the flow will be uniform in the <math id="p2.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction infinitely far away from the cylinder (see Fig. <a href="#Ch3.F4" title="Figure 3.4 ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4</span></a>):</p>
+<table id="Ch3.E23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E23.m1" class="ltx_Math" alttext="\mathbf{u}(r\to\infty)=(U,0,0)," display="block"><mrow><mi>𝐮</mi><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>→</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.23)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p2.m4" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is the constant speed of the flow far away from the cylinder.</p>
+</div>
+<figure id="Ch3.F4" class="ltx_figure"><object type="image/svg+xml" data="Figures/Chapter3/fig_cyl_setup.svg" id="Ch3.F4.g1" class="ltx_graphics ltx_centering" width="379" height="253" alt=""></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.4: </span>Fluid flows past the cylinder along the <math id="Ch3.F4.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction.</figcaption>
+</figure>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The other assumption we’ll make is that the flow is irrotational. This seems like a leap to make, though, since we don’t even know what the flow <em class="ltx_emph">is</em> yet. But remember the vorticity equation (<a href="Ch3.S3.html#Ch3.E10" title="(3.10) ‣ 3.3 The Vorticity Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10</span></a>) – for a steady two dimensional flow, the vorticity is conserved along streamlines. Since the vorticity at infinity, where the flow is <em class="ltx_emph">uniform</em>, is definitely zero, and every streamlines starts and ends at infinity, it follows that the flow is everywhere irrotational.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Wait, is our flow <em class="ltx_emph">steady</em>? Yes, as long as we examine the problem from the point of view of the flow already happening for a while; it’s reached a steady state. In practice, it doesn’t take long for the fluid to do this.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">To find the fluid velocity around the cylinder, we’ll solve Laplace’s equation. It makes sense to use cylindrical coordinates here, given the symmetry of the boundary. In cylindrical coordinates, then, Laplace’s equation is</p>
+<table id="Ch3.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E24.m1" class="ltx_Math" alttext="\frac{\partial^{2}{\phi}}{\partial{r}^{2}}+\frac{1}{r}\frac{\partial{\phi}}{%
+\partial{r}}+\frac{1}{r^{2}}\frac{\partial^{2}{\phi}}{\partial{\theta}^{2}}+%
+\frac{\partial^{2}{\phi}}{\partial{z}^{2}}=0." display="block"><mrow><mrow><mrow><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>ϕ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>ϕ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>θ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>ϕ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Now, this is an example of two dimensional flow, so the <math id="p5.m1" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> term we can safely ignore.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Our boundary conditions are straightforward to write down. First, at <math id="p6.m1" class="ltx_Math" alttext="r\to\infty" display="inline"><mrow><mi>r</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>, we should have the uniform flow given by equation (<a href="#Ch3.E23" title="(3.23) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.23</span></a>); we found the potential corresponding to this flow in Example <a href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>:</p>
+<table id="Ch3.E25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E25.m1" class="ltx_Math" alttext="\phi=Ur\cos\theta\quad\text{as}\quad r\to\infty." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>=</mo><mrow><mrow><mi>U</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mtext>as</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>r</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.25)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Secondly, at <math id="p6.m2" class="ltx_Math" alttext="r=a" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></math>, we have the actual boundary. Unlike viscous flows, ideal fluids must ‘‘slip’’ along a boundary; in this case, that means we must have the fluid velocity at <math id="p6.m3" class="ltx_Math" alttext="r=a" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></math> be purely in the <math id="p6.m4" class="ltx_Math" alttext="\hat{\theta}" display="inline"><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></math> direction. In other words, we need <math id="p6.m5" class="ltx_Math" alttext="u_{r}=0" display="inline"><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>=</mo><mn>0</mn></mrow></math>; in terms of the potential (using the gradient in cylindrical coordinates), that’s</p>
+<table id="Ch3.E26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E26.m1" class="ltx_Math" alttext="\frac{\partial{\phi}}{\partial{r}}=0\quad\text{at}\quad r=a." display="block"><mrow><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mrow><mn>0</mn><mo mathvariant="italic" separator="true"> </mo><mtext>at</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.26)</span></td>
+</tr>
+</table>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">We’ll solve Laplace’s equation using separation of variables. Let</p>
+<table id="Ch3.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex29.m1" class="ltx_Math" alttext="\phi(r,\theta)=R(r)\Theta(\theta)." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Then equation (<a href="#Ch3.E24" title="(3.24) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.24</span></a>) becomes</p>
+<table id="Ch3.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex30.m1" class="ltx_Math" alttext="\Theta\frac{d^{2}R}{dr^{2}}+\frac{\Theta}{r}\frac{dR}{dr}+\frac{R}{r^{2}}\frac%
+{d^{2}\Theta}{d\theta^{2}}=0," display="block"><mrow><mrow><mrow><mrow><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mi mathvariant="normal">Θ</mi><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mi>R</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">Θ</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>θ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">or, dividing by <math id="p7.m1" class="ltx_Math" alttext="R\Theta" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mi mathvariant="normal">Θ</mi></mrow></math> and multiplying by <math id="p7.m2" class="ltx_Math" alttext="r^{2}" display="inline"><msup><mi>r</mi><mn>2</mn></msup></math>,</p>
+<table id="Ch3.E27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E27.m1" class="ltx_Math" alttext="\frac{r^{2}}{R}\frac{d^{2}R}{dr^{2}}+\frac{r}{R}\frac{dR}{dr}=-\frac{1}{\Theta%
+}\frac{d^{2}\Theta}{d\theta^{2}}." display="block"><mrow><mrow><mrow><mrow><mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>R</mi></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mi>r</mi><mi>R</mi></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mi mathvariant="normal">Θ</mi></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">Θ</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>θ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.27)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The left hand side of the equation is a function of <math id="p7.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> only, while the right hand side is a function of <math id="p7.m4" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> only; they must therefore both be equal to a constant. We’ll call the this separation constant <math id="p7.m5" class="ltx_Math" alttext="k^{2}" display="inline"><msup><mi>k</mi><mn>2</mn></msup></math>. The <math id="p7.m6" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> equation is then</p>
+<table id="Ch3.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex31.m1" class="ltx_Math" alttext="\frac{d^{2}\Theta}{d\theta^{2}}=-k^{2}\Theta," display="block"><mrow><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">Θ</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>θ</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">Θ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which has the solution</p>
+<table id="Ch3.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex32.m1" class="ltx_Math" alttext="\Theta(\theta)=A\sin k\theta+B\cos k\theta." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>k</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>k</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">We can apply our first boundary condition, equation (<a href="#Ch3.E25" title="(3.25) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a>), right away to eliminate the sine term, since we need only a cosine dependence as <math id="p8.m1" class="ltx_Math" alttext="r\to\infty" display="inline"><mrow><mi>r</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>. Comparing the form of equation (<a href="#Ch3.E25" title="(3.25) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a>) with our solution, we furthermore must have <math id="p8.m2" class="ltx_Math" alttext="k=1" display="inline"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></math>. Thus</p>
+<table id="Ch3.E28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E28.m1" class="ltx_Math" alttext="\Theta(\theta)=B\cos\theta." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.28)</span></td>
+</tr>
+</table>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">The radial part of equation (<a href="#Ch3.E27" title="(3.27) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.27</span></a>) (with <math id="p9.m1" class="ltx_Math" alttext="k=1" display="inline"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></math>) now reads</p>
+<table id="Ch3.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex33.m1" class="ltx_Math" alttext="r^{2}\frac{d^{2}R}{dr^{2}}+r\frac{dR}{dr}-R=0." display="block"><mrow><mrow><mrow><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>-</mo><mi>R</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We can solve this by trying a power-law solution of the form <math id="p9.m2" class="ltx_Math" alttext="R(r)=r^{m}" display="inline"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>r</mi><mi>m</mi></msup></mrow></math>; it turns out that the general solution is</p>
+<table id="Ch3.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex34.m1" class="ltx_Math" alttext="R(r)=Cr+\frac{D}{r}." display="block"><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>r</mi></mrow><mo>+</mo><mfrac><mi>D</mi><mi>r</mi></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">But our second boundary condition, equation (<a href="#Ch3.E26" title="(3.26) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.26</span></a>), was that the first derivative of the potential goes to zero at <math id="p9.m3" class="ltx_Math" alttext="r=a" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></math>. That means</p>
+<table id="Ch3.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex35.m1" class="ltx_Math" alttext="\frac{dR}{dr}=\left(C-\frac{D}{r^{2}}\right)_{r=a}=0," display="block"><mrow><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac><mo>=</mo><msub><mrow><mo>(</mo><mrow><mi>C</mi><mo>-</mo><mfrac><mi>D</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mo>)</mo></mrow><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and so <math id="p9.m4" class="ltx_Math" alttext="D=a^{2}C" display="inline"><mrow><mi>D</mi><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mi>C</mi></mrow></mrow></math>.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Combining the radial and angular equations gives us</p>
+<table id="Ch3.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex36.m1" class="ltx_Math" alttext="\phi(r,\theta)=R(r)\Theta(\theta)=F\left(r+\frac{a^{2}}{r}\right)\cos\theta," display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>+</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p10.m1" class="ltx_Math" alttext="F=CB" display="inline"><mrow><mi>F</mi><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mi>B</mi></mrow></mrow></math> is our last remaining constant. One more comparison with our boundary condition, equation (<a href="#Ch3.E25" title="(3.25) ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a>), tells us that <math id="p10.m2" class="ltx_Math" alttext="F=U" display="inline"><mrow><mi>F</mi><mo>=</mo><mi>U</mi></mrow></math>. So our solution to Laplace’s equation is, finally,</p>
+<table id="Ch3.E29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E29.m1" class="ltx_Math" alttext="\phi(r,\theta)=U\left(r+\frac{a^{2}}{r}\right)\cos\theta." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>+</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.29)</span></td>
+</tr>
+</table>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">That’s the potential; what about the fluid velocity? No problem:</p>
+<table id="Ch3.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex37.m1" class="ltx_Math" alttext="\mathbf{u}=\boldsymbol{\nabla}\phi," display="block"><mrow><mrow><mi>𝐮</mi><mo>=</mo><mrow><mo mathvariant="bold">∇</mo><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">so</p>
+<table id="Ch3.E30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E30.m1" class="ltx_Math" alttext="u_{r}(r,\theta)=U\left(1-\frac{a^{2}}{r^{2}}\right)\cos\theta" display="block"><mrow><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.30)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="Ch3.E31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E31.m1" class="ltx_Math" alttext="u_{\theta}(r,\theta)=-U\left(1+\frac{a^{2}}{r^{2}}\right)\sin\theta." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.31)</span></td>
+</tr>
+</table>
+<p class="ltx_p">From <math id="p11.m1" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math>, we can sketch streamlines, which are shown in Figure <a href="#Ch3.F5" title="Figure 3.5 ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>.</p>
+</div>
+<figure id="Ch3.F5" class="ltx_figure"><object type="image/svg+xml" data="Figures/Chapter3/fig_cylinder_stream.svg" id="Ch3.F5.g1" class="ltx_graphics ltx_centering" width="379" height="272" alt=""></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.5: </span>The streamlines for the flow around the cylinder. Note that there are stagnation points upstream and downstream of the cylinder (<math id="Ch3.F5.m5" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="Ch3.F5.m6" class="ltx_Math" alttext="\theta=\pi" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>π</mi></mrow></math>), and the fluid has greatest velocity at the top and bottom (<math id="Ch3.F5.m7" class="ltx_Math" alttext="\theta=\pi 2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mn>2</mn></mrow></mrow></math> and <math id="Ch3.F5.m8" class="ltx_Math" alttext="\theta=3\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math>).</figcaption>
+</figure>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Let’s examine the flow in a little more detail. Note that, as necessary, <math id="p12.m1" class="ltx_Math" alttext="u_{r}=0" display="inline"><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>=</mo><mn>0</mn></mrow></math> at <math id="p12.m2" class="ltx_Math" alttext="r=a" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></math>. On the boundary, the flow is purely angular, with speed</p>
+<table id="Ch3.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex38.m1" class="ltx_Math" alttext="u_{\theta}=-2U\sin\theta\quad\text{at}\quad r=a." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>U</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mtext>at</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">At <math id="p12.m3" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p12.m4" class="ltx_Math" alttext="\theta=\pi" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>π</mi></mrow></math>, then <math id="p12.m5" class="ltx_Math" alttext="u_{\theta}=0" display="inline"><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>=</mo><mn>0</mn></mrow></math> and there is a stagnation point there (see Figure <a href="#Ch3.F5" title="Figure 3.5 ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>). There is a maximum speed at <math id="p12.m6" class="ltx_Math" alttext="\theta=\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> and <math id="p12.m7" class="ltx_Math" alttext="\theta=3\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math> of</p>
+<table id="Ch3.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex39.m1" class="ltx_Math" alttext="u_{\theta,\text{max}}=2U\quad\text{at}\quad r=a." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mrow><mi>θ</mi><mo>,</mo><mtext>max</mtext></mrow></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>U</mi></mrow><mo mathvariant="italic" separator="true"> </mo><mtext>at</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">What about the pressure in the fluid? Well, we could apply Euler’s equation to find it, but Bernoulli’s principle provides a shortcut. Since the flow is irrotational, <math id="p13.m1" class="ltx_Math" alttext="\boldsymbol{\nabla}H=0" display="inline"><mrow><mrow><mo mathvariant="bold">∇</mo><mo>⁡</mo><mi>H</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="p13.m2" class="ltx_Math" alttext="H=p/\rho+\tfrac{1}{2}\mathbf{u}^{2}+gz=" display="inline"><mrow><mi>H</mi><mo>=</mo><mrow><mrow><mi>p</mi><mo>/</mo><mi>ρ</mi></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>𝐮</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mi></mi></mrow></math> constant everywhere in the fluid. In our analysis, though, we’ll neglect the gravity term; we’re only looking at the <math id="p13.m3" class="ltx_Math" alttext="(r,\theta)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></math> dependence of the pressure here, and gravity will only impose an overall vertical pressure gradient.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Let’s first evaluate <math id="p14.m1" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> at infinity, where <math id="p14.m2" class="ltx_Math" alttext="\mathbf{u}=(U,0,0)" display="inline"><mrow><mi>𝐮</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math> and we’ll label the pressure <math id="p14.m3" class="ltx_Math" alttext="p_{\infty}" display="inline"><msub><mi>p</mi><mi mathvariant="normal">∞</mi></msub></math>. Then</p>
+<table id="Ch3.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex40.m1" class="ltx_Math" alttext="H=\frac{p_{\infty}}{\rho}+\tfrac{1}{2}U^{2}." display="block"><mrow><mrow><mi>H</mi><mo>=</mo><mrow><mfrac><msub><mi>p</mi><mi mathvariant="normal">∞</mi></msub><mi>ρ</mi></mfrac><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>U</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Elsewhere in the fluid, it’s</p>
+<table id="Ch3.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex41.m1" class="ltx_Math" alttext="H=\frac{p(r,\theta)}{\rho}+\tfrac{1}{2}\mathbf{u}^{2}," display="block"><mrow><mrow><mi>H</mi><mo>=</mo><mrow><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mi>ρ</mi></mfrac><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>𝐮</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="Ch3.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex42.m1" class="ltx_Math" alttext="\mathbf{u}^{2}=\mathbf{u}\cdot\mathbf{u}=u_{r}^{2}+u_{\theta}^{2}=U^{2}\left(1%
++\frac{a^{4}}{r^{4}}-2\frac{a^{2}}{r^{2}}\cos 2\theta\right)" display="block"><mrow><msup><mi>𝐮</mi><mn>2</mn></msup><mo>=</mo><mrow><mi>𝐮</mi><mo>⋅</mo><mi>𝐮</mi></mrow><mo>=</mo><mrow><msubsup><mi>u</mi><mi>r</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>u</mi><mi>θ</mi><mn>2</mn></msubsup></mrow><mo>=</mo><mrow><msup><mi>U</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>a</mi><mn>4</mn></msup><msup><mi>r</mi><mn>4</mn></msup></mfrac></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(that last step required some algebra to clean up, though). Since <math id="p14.m4" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> is constant, we have</p>
+<table id="Ch3.Ex43" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.Ex43.m1" class="ltx_Math" alttext="\frac{p(r,\theta)}{\rho}+\tfrac{1}{2}U^{2}\left(1+\frac{a^{4}}{r^{4}}-2\frac{a%
+^{2}}{r^{2}}\cos 2\theta\right)=\frac{p_{\infty}}{\rho}+\tfrac{1}{2}U^{2}." display="block"><mrow><mrow><mrow><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mi>ρ</mi></mfrac><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>U</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>a</mi><mn>4</mn></msup><msup><mi>r</mi><mn>4</mn></msup></mfrac></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><msub><mi>p</mi><mi mathvariant="normal">∞</mi></msub><mi>ρ</mi></mfrac><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>U</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Rearranging gives the pressure,</p>
+<table id="Ch3.E32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E32.m1" class="ltx_Math" alttext="p(r,\theta)=p_{\infty}+\tfrac{1}{2}\rho\frac{a^{2}}{r^{2}}U^{2}\left(2\cos 2%
+\theta-\frac{a^{2}}{r^{2}}\right)." display="block"><mrow><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>p</mi><mi mathvariant="normal">∞</mi></msub><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><msup><mi>U</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow><mo>-</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.32)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Figure <a href="#Ch3.F6" title="Figure 3.6 ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a> shows the pressure around the cylinder; there is a region of high pressure at <math id="p14.m5" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p14.m6" class="ltx_Math" alttext="\theta=\pi" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>π</mi></mrow></math>, with low pressure at <math id="p14.m7" class="ltx_Math" alttext="\theta=\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> and <math id="p14.m8" class="ltx_Math" alttext="\theta=3\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math>. Not surprisingly, this is opposite the fluid velocity – expected, since Bernoulli’s theorem holds here.</p>
+</div>
+<figure id="Ch3.F6" class="ltx_figure"><object type="image/svg+xml" data="Figures/Chapter3/fig_cylinder_pressure.svg" id="Ch3.F6.g1" class="ltx_graphics ltx_centering" width="432" height="293" alt=""></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.6: </span>The pressure field of fluid flowing past a cylinder. The pinkish regions are areas of high pressure, while the yellow/green areas are low pressure. The streamlines are shown as well.</figcaption>
+</figure>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch3.S5.html" title="3.5 The Velocity Potential and Laplace’s Equation ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>The Velocity Potential and Laplace’s Equation</span></a><a href="Ch3.Sx1.html" title="Problems ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title">Problems</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Wed Jul  3 10:18:22 2019 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

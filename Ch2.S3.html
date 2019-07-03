@@ -1,0 +1,827 @@
+<!DOCTYPE html><html>
+<head>
+<title>2.3 Circular Flow‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics</title>
+<!--Generated on Wed Jul  3 10:18:22 2019 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on  .-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="fluids.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="up" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="up up" href="." title="Introduction to Fluid Dynamics">
+<link rel="start" href="." title="Introduction to Fluid Dynamics">
+<link rel="prev" href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="next" href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="." title="Introduction to Fluid Dynamics" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_document">
+<a href="." title="Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<ul class="ltx_toclist ltx_toclist_document">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>The Navier-Stokes Equations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Circular Flow</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS1" title="2.3.1 The Navier-Stokes Equations in Cylindrical Coordinates ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3.1 </span>The Navier-Stokes Equations in Cylindrical Coordinates</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS2" title="2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3.2 </span>Uniformly Rotating Fluid</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS3" title="2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3.3 </span>Spin Down of Rotating Fluid</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS4" title="2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3.4 </span>The Line Vortex</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Transport of Vorticity</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Advanced Topics 1: Deriving the Navier-Stokes Equations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.6 </span>Advanced Topics 2: Boundary Layers</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Problems</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Ideal Fluids</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a><a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a><a href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Transport of Vorticity</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2.3 </span>Circular Flow</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3.1 </span>The Navier-Stokes Equations in Cylindrical Coordinates</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">The Navier-Stokes equations are trickier to write down in cylindrical coordinates, mainly due to the fact that the cylindrical unit vectors <math id="SS1.p1.m1" class="ltx_Math" alttext="\hat{r}" display="inline"><mover accent="true"><mi>r</mi><mo stretchy="false">^</mo></mover></math> and <math id="SS1.p1.m2" class="ltx_Math" alttext="\hat{\theta}" display="inline"><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></math> in Equation <a href="Ch1.S2.html#Ch1.E3" title="(1.3) ‣ 1.2 Describing Fluid Flow ‣ Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.3</span></a> are not <em class="ltx_emph">constant</em> – they depend on <math id="SS1.p1.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>:</p>
+<table id="Ch3.Sx1.EGx7" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.Ex46" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex46.m1" class="ltx_Math" alttext="\displaystyle\hat{r}" display="inline"><mover accent="true"><mi>r</mi><mo stretchy="false">^</mo></mover></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex46.m2" class="ltx_Math" alttext="\displaystyle=\cos\theta\hat{i}+\sin\theta\hat{j}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mover accent="true"><mi>i</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mover accent="true"><mi>j</mi><mo stretchy="false">^</mo></mover></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ch2.Ex47" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.Ex47.m1" class="ltx_Math" alttext="\displaystyle\hat{\theta}" display="inline"><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.Ex47.m2" class="ltx_Math" alttext="\displaystyle=-\sin\theta\hat{i}+\cos\theta\hat{j}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mover accent="true"><mi>i</mi><mo stretchy="false">^</mo></mover></mrow></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mover accent="true"><mi>j</mi><mo stretchy="false">^</mo></mover></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">When evaluating the derivatives in the Navier-Stokes equation, then, you have to be very careful to take this dependence into account. For example, note that</p>
+<table id="Ch2.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex48.m1" class="ltx_Math" alttext="\frac{d\hat{r}}{d\theta}=\hat{\theta}" display="block"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><mi>r</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mfrac><mo>=</mo><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="Ch2.Ex49" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex49.m1" class="ltx_Math" alttext="\frac{d\hat{\theta}}{d\theta}=-\hat{r}." display="block"><mrow><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mover accent="true"><mi>r</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Furthermore, the gradient and Laplacian operators in cylindrical coordinates are a little more cumbersome than in Cartesian; I won’t bother writing them out here, but you should look them up on your own.<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">8</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">8</sup>I really like the front and back covers in Griffiths’ <em class="ltx_emph">Introduction to Electrodynamics</em> for this.</span></span></span> Altogether, here’s the Navier-Stokes equations in cylindrical coordinates for you:</p>
+<table id="Ch3.Sx1.EGx8" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E36" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E36.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial u_{r}}{\partial t}+(\mathbf{u}\cdot\boldsymbol{%
+\nabla})u_{r}-\frac{u_{\theta}^{2}}{r}" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>r</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>𝐮</mi><mo>⋅</mo><mo mathvariant="bold">∇</mo></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>u</mi><mi>r</mi></msub></mrow></mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><msubsup><mi>u</mi><mi>θ</mi><mn>2</mn></msubsup><mi>r</mi></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E36.m2" class="ltx_Math" alttext="\displaystyle=-\frac{1}{\rho}\frac{\partial p}{\partial r}+\nu\left(\nabla^{2}%
+u_{r}-\frac{u_{r}}{r^{2}}-\frac{2}{r^{2}}\frac{\partial u_{\theta}}{\partial%
+\theta}\right)+g_{r}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>r</mi></msub></mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi>u</mi><mi>r</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>r</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.36)</span></td>
+</tr>
+<tr id="Ch2.E37" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E37.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial u_{\theta}}{\partial t}+(\mathbf{u}\cdot%
+\boldsymbol{\nabla})u_{\theta}+\frac{u_{r}u_{\theta}}{r}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>𝐮</mi><mo>⋅</mo><mo mathvariant="bold">∇</mo></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>⁢</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mi>r</mi></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E37.m2" class="ltx_Math" alttext="\displaystyle=-\frac{1}{\rho r}\frac{\partial p}{\partial\theta}+\nu\left(%
+\nabla^{2}u_{\theta}-\frac{u_{\theta}}{r^{2}}+\frac{2}{r^{2}}\frac{\partial u_%
+{r}}{\partial\theta}\right)+g_{\theta}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>ρ</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi>u</mi><mi>θ</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>r</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>θ</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.37)</span></td>
+</tr>
+<tr id="Ch2.E38" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E38.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial u_{z}}{\partial t}+(\mathbf{u}\cdot\boldsymbol{%
+\nabla})u_{z}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>z</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>𝐮</mi><mo>⋅</mo><mo mathvariant="bold">∇</mo></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>u</mi><mi>z</mi></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E38.m2" class="ltx_Math" alttext="\displaystyle=-\frac{1}{\rho}\frac{\partial p}{\partial z}+\nu\nabla^{2}u_{z}+%
+g_{z}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><msup><mo>∇</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>z</mi></msub></mrow></mrow><mo>+</mo><msub><mi>g</mi><mi>z</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.38)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="Ch3.Sx1.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E40" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E40.m1" class="ltx_Math" alttext="\displaystyle(\mathbf{u}\cdot\boldsymbol{\nabla})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>𝐮</mi><mo>⋅</mo><mo mathvariant="bold">∇</mo></mrow><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E40.m2" class="ltx_Math" alttext="\displaystyle=u_{r}\frac{\partial}{\partial r}+\frac{u_{\theta}}{r}\frac{%
+\partial}{\partial\theta}+u_{z}\frac{\partial}{\partial z}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><msub><mi>u</mi><mi>θ</mi></msub><mi>r</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><msub><mi>u</mi><mi>z</mi></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.40)</span></td>
+</tr>
+<tr id="Ch2.E41" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E41.m1" class="ltx_Math" alttext="\displaystyle\nabla^{2}" display="inline"><msup><mo>∇</mo><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E41.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial}{%
+\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}}{\partial\theta^{2}}+%
+\frac{\partial^{2}}{\partial z^{2}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>r</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>θ</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.41)</span></td>
+</tr>
+</table>
+<p class="ltx_p">In addition, the incompressibility condition <math id="SS1.p2.m1" class="ltx_Math" alttext="\boldsymbol{\nabla}\cdot\mathbf{u}=0" display="inline"><mrow><mrow><mo mathvariant="bold">∇</mo><mo>⋅</mo><mi>𝐮</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> becomes</p>
+<table id="Ch2.E42" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E42.m1" class="ltx_Math" alttext="\frac{1}{r}\frac{\partial}{\partial r}(ru_{r})+\frac{1}{r}\frac{\partial u_{%
+\theta}}{\partial\theta}+\frac{\partial u_{z}}{\partial z}=0." display="block"><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>⁢</mo><msub><mi>u</mi><mi>r</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><mo>+</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>z</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.42)</span></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3.2 </span>Uniformly Rotating Fluid</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">For our first problem, we’ll consider fluid within a cylinder of radius <math id="SS2.p1.m1" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>, as shown in Figure <a href="Ch3.S6.html#Ch3.F4" title="Figure 3.4 ‣ 3.6 Example: Flow Past a Cylinder ‣ Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4</span></a>, with the cylinder rotating with an angular speed of <math id="SS2.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math>.</p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Already this is two dimensional flow – we’ll assume the cylinder is infinitely long, so there won’t be any <math id="SS2.p2.m1" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> dependence of flow in that direction. But, to make things simpler, we also impose full cylindrical symmetry on our flow: the velocity will always take the form</p>
+<table id="Ch2.E43" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E43.m1" class="ltx_Math" alttext="\mathbf{u}=u_{\theta}(r,t)\,\hat{\theta}." display="block"><mrow><mrow><mi>𝐮</mi><mo>=</mo><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.43)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This means that the flow is always <em class="ltx_emph">circular</em>, with streamlines that are circles. Furthermore, the speed of the fluid only depends on the distance <math id="SS2.p2.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> from the origin, giving us the cylindrical symmetry. One nice benefit to a flow of this form is that the incompressibility condition is automatically satisfied, which you can check yourself with Problem <a href="Ch2.Sx1.html#Ch2.F19" title="Figure 2.19 ‣ Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>.</p>
+</div>
+<figure id="Ch2.F9" class="ltx_figure"><img src="x13.png" id="Ch2.F9.g1" class="ltx_graphics ltx_centering" width="474" height="317" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.9: </span>The fluid is constrained to be within a cylinder of radius <math id="Ch2.F9.m2" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>. We’ll put the origin at the centre of the cylinder.</figcaption>
+</figure>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">As you might expect, taking this form of the velocity drastically reduces the Navier-Stokes equations. Equations <a href="#Ch2.E36" title="(2.36) ‣ 2.3.1 The Navier-Stokes Equations in Cylindrical Coordinates ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.36</span></a> - <a href="#Ch2.E38" title="(2.38) ‣ 2.3.1 The Navier-Stokes Equations in Cylindrical Coordinates ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.38</span></a> become</p>
+<table id="Ch3.Sx1.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E44" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E44.m1" class="ltx_Math" alttext="\displaystyle\frac{u_{\theta}^{2}}{r}" display="inline"><mstyle displaystyle="true"><mfrac><msubsup><mi>u</mi><mi>θ</mi><mn>2</mn></msubsup><mi>r</mi></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E44.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{\rho}\frac{\partial{p}}{\partial{r}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.44)</span></td>
+</tr>
+<tr id="Ch2.E45" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E45.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial{u_{\theta}}}{\partial{t}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E45.m2" class="ltx_Math" alttext="\displaystyle=-\frac{1}{\rho r}\frac{\partial{p}}{\partial{\theta}}+\nu\left(%
+\frac{\partial^{2}{u_{\theta}}}{\partial{r}^{2}}+\frac{1}{r}\frac{\partial{u_{%
+\theta}}}{\partial{r}}-\frac{u_{\theta}}{r^{2}}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>ρ</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>r</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi>u</mi><mi>θ</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.45)</span></td>
+</tr>
+<tr id="Ch2.E46" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E46.m1" class="ltx_Math" alttext="\displaystyle 0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E46.m2" class="ltx_Math" alttext="\displaystyle=-\frac{1}{\rho}\frac{\partial{p}}{\partial{z}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>ρ</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.46)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Note that I’ve completely dropped the gravity terms here – but see Problem <a href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> for the minimal effect that gravity has on our problems.</p>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">Now, the third equation above – the one for <math id="SS2.p4.m1" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> – just says that the pressure <math id="SS2.p4.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> doesn’t depend on <math id="SS2.p4.m3" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> at all, not surprising given the symmetry of the problem. The first equation gives us a relationship between the fluid velocity <math id="SS2.p4.m4" class="ltx_Math" alttext="u_{\theta}" display="inline"><msub><mi>u</mi><mi>θ</mi></msub></math> and the radial pressure gradient, so if we know one we can get the other. The second equation is the important one, but we can clean it up a bit more.</p>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<p class="ltx_p">Since <math id="SS2.p5.m1" class="ltx_Math" alttext="u_{\theta}=u_{\theta}(r,t)" display="inline"><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>=</mo><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> only, Equation <a href="#Ch2.E45" title="(2.45) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.45</span></a> says that <math id="SS2.p5.m2" class="ltx_Math" alttext="\partial p/\partial\theta" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mrow></math> must also be a function of only <math id="SS2.p5.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> and <math id="SS2.p5.m4" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. So we can write</p>
+<table id="Ch2.Ex50" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex50.m1" class="ltx_Math" alttext="\frac{\partial{p}}{\partial{\theta}}=P(r,t)," display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS2.p5.m5" class="ltx_Math" alttext="P(r,t)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is some unknown function. If we integrate this to find <math id="SS2.p5.m6" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, we get</p>
+<table id="Ch2.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex51.m1" class="ltx_Math" alttext="p=P(r,t)\theta+f(r,t)," display="block"><mrow><mrow><mi>p</mi><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>θ</mi></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS2.p5.m7" class="ltx_Math" alttext="f(r,t)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the integration ‘‘constant’’ – remember, we have a partial derivative here (and note that there’s no <math id="SS2.p5.m8" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> dependence thanks to Equation <a href="#Ch2.E46" title="(2.46) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.46</span></a>). But this shows us that the function <math id="SS2.p5.m9" class="ltx_Math" alttext="P(r,t)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> <em class="ltx_emph">must</em> be zero, since otherwise the pressure would be a multivalued function of position; it would take on different values for <math id="SS2.p5.m10" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="SS2.p5.m11" class="ltx_Math" alttext="\theta=2\pi" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></math>, for example, even though those two angles represent the same point in space.</p>
+</div>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Equation <a href="#Ch2.E45" title="(2.45) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.45</span></a> then becomes, with <math id="SS2.p6.m1" class="ltx_Math" alttext="P(r,t)=\partial p/\partial\theta=0" display="inline"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="Ch2.E47" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E47.m1" class="ltx_Math" alttext="\boxed{\frac{\partial{u_{\theta}}}{\partial{t}}=\nu\left(\frac{\partial^{2}{u_%
+{\theta}}}{\partial{r}^{2}}+\frac{1}{r}\frac{\partial{u_{\theta}}}{\partial{r}%
+}-\frac{u_{\theta}}{r^{2}}\right).}" display="block"><menclose notation="box"><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mi>ν</mi><mrow><mo>(</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac><mo>-</mo><mfrac><msub><mi>u</mi><mi>θ</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mo>.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.47)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This equation determines the evolution of the fluid velocity.</p>
+</div>
+<div id="SS2.p7" class="ltx_para">
+<p class="ltx_p">Now we can go back to our original problem – fluid inside a rotating cylinder. We’ll first assume the fluid is <em class="ltx_emph">steady</em>, so that <math id="SS2.p7.m1" class="ltx_Math" alttext="\partial u_{\theta}/\partial t=0" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. Multiplying Equation <a href="#Ch2.E47" title="(2.47) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.47</span></a> by <math id="SS2.p7.m2" class="ltx_Math" alttext="r^{2}" display="inline"><msup><mi>r</mi><mn>2</mn></msup></math> gives us</p>
+<table id="Ch2.E48" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E48.m1" class="ltx_Math" alttext="r^{2}\frac{d^{2}u_{\theta}}{dr^{2}}+r\frac{du_{\theta}}{dr}-u_{\theta}=0." display="block"><mrow><mrow><mrow><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>-</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.48)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Notice that the viscosity has dropped out of the problem. To solve this ordinary differential equation, let’s ‘‘guess’’ at a power-law solution of the form</p>
+<table id="Ch2.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex52.m1" class="ltx_Math" alttext="u_{\theta}(r)=r^{m}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>r</mi><mi>m</mi></msup></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Plugging this form into our equation leads to the quadratic</p>
+<table id="Ch2.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex53.m1" class="ltx_Math" alttext="m^{2}-1=0," display="block"><mrow><mrow><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which has roots <math id="SS2.p7.m3" class="ltx_Math" alttext="m=+1" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mo>+</mo><mn>1</mn></mrow></mrow></math> and <math id="SS2.p7.m4" class="ltx_Math" alttext="m=-1" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math>. Our general solution is then</p>
+<table id="Ch2.E49" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E49.m1" class="ltx_Math" alttext="u_{\theta}(r)=Ar+\frac{B}{r}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>r</mi></mrow><mo>+</mo><mfrac><mi>B</mi><mi>r</mi></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.49)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p8" class="ltx_para">
+<p class="ltx_p">Since we have viscous fluid, one of our boundary conditions must be that the fluid moves with the same velocity as the cylinder wall, so that</p>
+<table id="Ch2.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex54.m1" class="ltx_Math" alttext="u_{\theta}(a)=\Omega a." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>a</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We don’t really have another boundary condition, since there isn’t another boundary; however, note that the second term in Equation <a href="#Ch2.E49" title="(2.49) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.49</span></a> blows up at <math id="SS2.p8.m1" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>, the centre of the cylinder. So, to keep the fluid velocity everywhere finite, we need to set <math id="SS2.p8.m2" class="ltx_Math" alttext="B=0" display="inline"><mrow><mi>B</mi><mo>=</mo><mn>0</mn></mrow></math>. The boundary condition then leads to <math id="SS2.p8.m3" class="ltx_Math" alttext="A=\Omega" display="inline"><mrow><mi>A</mi><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow></math>, so our solution is</p>
+<table id="Ch2.E50" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E50.m1" class="ltx_Math" alttext="u_{\theta}(r)=\Omega r." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.50)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This flow is in <em class="ltx_emph">solid body rotation</em> – in other words, the fluid rotates in exactly the same way as a solid body would, at constant angular speed <math id="SS2.p8.m4" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math>.
+</p>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3.3 </span>Spin Down of Rotating Fluid</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">What happens to the fluid if the rotating cylinder is suddenly brought to rest? Now we have time-dependent flow, and we’ll have to use the full Equation <a href="#Ch2.E47" title="(2.47) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.47</span></a> to model what happens. Just a warning before we proceed: this is a pretty complicated problem to solve, and will require some knowledge about Bessel functions. We’ll take it slow, but it might help to ready up on them first.</p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">We’ll use separation of variables to solve the partial differential equation, but first we should write out the initial and boundary conditions. The initial condition is of course our steady state solution we just found, Equation <a href="#Ch2.E50" title="(2.50) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.50</span></a>,</p>
+<table id="Ch2.E51" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E51.m1" class="ltx_Math" alttext="u_{\theta}(r,t=0)=\Omega r." display="block"><mrow><msub><mi>u</mi><mi>θ</mi></msub><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi><mi>r</mi><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.51)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We’ll suppose the cylinder is brought to rest at <math id="SS3.p2.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>, so after that the no-slip condition says that</p>
+<table id="Ch2.E52" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E52.m1" class="ltx_Math" alttext="u_{\theta}(a,t)=0\quad\text{for }t&gt;0." display="block"><mrow><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.52)</span></td>
+</tr>
+</table>
+<p class="ltx_p">As with our last problem, we’ll also have to make sure that the velocity is finite everywhere in the fluid.</p>
+</div>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">Let</p>
+<table id="Ch2.Ex55" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex55.m1" class="ltx_Math" alttext="u_{\theta}(r,t)=R(r)T(t)" display="block"><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and plug that into Equation <a href="#Ch2.E47" title="(2.47) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.47</span></a>. Dividing both sides by <math id="SS3.p3.m1" class="ltx_Math" alttext="RT" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mi>T</mi></mrow></math> gives</p>
+<table id="Ch2.Ex56" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex56.m1" class="ltx_Math" alttext="\frac{1}{\nu T}\frac{dT}{dt}=\frac{1}{R}\frac{d^{2}R}{dr^{2}}+\frac{1}{rR}%
+\frac{dR}{dr}-\frac{1}{r^{2}}." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mi>ν</mi><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mi>r</mi><mo>⁢</mo><mi>R</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>-</mo><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The left hand side is a function of time <math id="SS3.p3.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> only, while the right hand side depends only on <math id="SS3.p3.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>. Since they’re independent variables, both sides must be equal to a constant, which, with the benefit of hindsight, we’ll call <math id="SS3.p3.m4" class="ltx_Math" alttext="-k^{2}" display="inline"><mrow><mo>-</mo><msup><mi>k</mi><mn>2</mn></msup></mrow></math>.</p>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<p class="ltx_p">The left hand side becomes</p>
+<table id="Ch2.Ex57" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex57.m1" class="ltx_Math" alttext="\frac{dT}{dt}=-\nu k^{2}T," display="block"><mrow><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><mi>ν</mi><mo>⁢</mo><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>T</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which has the solution</p>
+<table id="Ch2.E53" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E53.m1" class="ltx_Math" alttext="T(t)=Ce^{-\nu k^{2}t}," display="block"><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>ν</mi><mo>⁢</mo><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.53)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS3.p4.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a constant. The right hand side is a little more difficult. With a little manipulation (multiplying both sides by <math id="SS3.p4.m2" class="ltx_Math" alttext="r^{2}R" display="inline"><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow></math>) we can write it as</p>
+<table id="Ch2.Ex58" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex58.m1" class="ltx_Math" alttext="r^{2}\frac{d^{2}R}{dr^{2}}+r\frac{dR}{dr}+\left(k^{2}r^{2}-1\right)R=0." display="block"><mrow><mrow><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>R</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">One more small change: let</p>
+<table id="Ch2.Ex59" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex59.m1" class="ltx_Math" alttext="x=kr." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Then the equation becomes</p>
+<table id="Ch2.E54" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E54.m1" class="ltx_Math" alttext="x^{2}\frac{d^{2}R}{dx^{2}}+x\frac{dR}{dx}+\left(x^{2}-1\right)R=0." display="block"><mrow><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>R</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.54)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This equation isn’t easy to solve by hand, but it turns out to be a fairly famous differential equation that pops up in various places in physics (like electromagnetism and acoustics) – it’s called Bessel’s equation, and the solutions are called <em class="ltx_emph">Bessel functions</em>.</p>
+</div>
+<div id="SS3.p5" class="ltx_para">
+<p class="ltx_p">The Bessel function of the first kind is usually written <math id="SS3.p5.m1" class="ltx_Math" alttext="J_{\alpha}(x)" display="inline"><mrow><msub><mi>J</mi><mi>α</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, where <math id="SS3.p5.m2" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> is called the <em class="ltx_emph">order</em> of the Bessel function. In our case, with the <math id="SS3.p5.m3" class="ltx_Math" alttext="(x^{2}-1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math> term in the equation, we’re dealing only with the first order, so <math id="SS3.p5.m4" class="ltx_Math" alttext="\alpha=1" display="inline"><mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow></math>. The second solution is the Bessel function of the second kind, sometimes called the Neumann function, <math id="SS3.p5.m5" class="ltx_Math" alttext="Y_{\alpha}(x)" display="inline"><mrow><msub><mi>Y</mi><mi>α</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. We can’t write either function in closed form – the best we can do is a series solution – but I’ve plotted both <math id="SS3.p5.m6" class="ltx_Math" alttext="J_{1}(x)" display="inline"><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="SS3.p5.m7" class="ltx_Math" alttext="Y_{1}(x)" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> in Figure <a href="#Ch2.F10" title="Figure 2.10 ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10</span></a>. Note that both functions are oscillatory, but not with a nice regular period like sine and cosine; Table <a href="#Ch2.T1" title="Table 2.1 ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> lists a few of the zeros of each, and we’ll need those in a moment.</p>
+</div>
+<figure id="Ch2.F10" class="ltx_figure"><img src="x14.png" id="Ch2.F10.g1" class="ltx_graphics ltx_centering" width="473" height="340" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.10: </span>The Bessel functions of the first (black) and and second (red) kind, of order <math id="Ch2.F10.m2" class="ltx_Math" alttext="\alpha=1" display="inline"><mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow></math>.</figcaption>
+</figure>
+<figure id="Ch2.T1" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_th ltx_th_column ltx_th_row ltx_border_r"></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r"><math id="Ch2.T1.m1" class="ltx_Math" alttext="J_{1}(x)" display="inline"><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column"><math id="Ch2.T1.m2" class="ltx_Math" alttext="Y_{1}(x)" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_r ltx_border_t"><math id="Ch2.T1.m3" class="ltx_Math" alttext="\lambda_{1}" display="inline"><msub><mi>λ</mi><mn>1</mn></msub></math></th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">3.83170597</td>
+<td class="ltx_td ltx_align_left ltx_border_t">2.19714133</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_r"><math id="Ch2.T1.m4" class="ltx_Math" alttext="\lambda_{2}" display="inline"><msub><mi>λ</mi><mn>2</mn></msub></math></th>
+<td class="ltx_td ltx_align_left ltx_border_r">7.01558667</td>
+<td class="ltx_td ltx_align_left">5.42968104</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_r"><math id="Ch2.T1.m5" class="ltx_Math" alttext="\lambda_{3}" display="inline"><msub><mi>λ</mi><mn>3</mn></msub></math></th>
+<td class="ltx_td ltx_align_left ltx_border_r">10.17346814</td>
+<td class="ltx_td ltx_align_left">8.59600587</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_r"><math id="Ch2.T1.m6" class="ltx_Math" alttext="\lambda_{4}" display="inline"><msub><mi>λ</mi><mn>4</mn></msub></math></th>
+<td class="ltx_td ltx_align_left ltx_border_r">13.32369194</td>
+<td class="ltx_td ltx_align_left">11.74915483</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_r"><math id="Ch2.T1.m7" class="ltx_Math" alttext="\lambda_{5}" display="inline"><msub><mi>λ</mi><mn>5</mn></msub></math></th>
+<td class="ltx_td ltx_align_left ltx_border_r">16.47063005</td>
+<td class="ltx_td ltx_align_left">14.89744213</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 2.1: </span>The first five zeros for the Bessel functions.</figcaption>
+</figure>
+<div id="SS3.p6" class="ltx_para">
+<p class="ltx_p">The general solution to Equation <a href="#Ch2.E54" title="(2.54) ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.54</span></a> is the superposition of both Bessel functions,</p>
+<table id="Ch2.Ex60" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex60.m1" class="ltx_Math" alttext="R(x)=AJ_{1}(x)+BY_{1}(x)." display="block"><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">However, we can see from Figure <a href="#Ch2.F10" title="Figure 2.10 ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10</span></a> that the second function goes to negative infinity at the origin. This is no good – we want the velocity of the fluid to always be finite – so we can drop the this function and set <math id="SS3.p6.m1" class="ltx_Math" alttext="B=0" display="inline"><mrow><mi>B</mi><mo>=</mo><mn>0</mn></mrow></math>. Going back to using <math id="SS3.p6.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> instead of <math id="SS3.p6.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, we have</p>
+<table id="Ch2.Ex61" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex61.m1" class="ltx_Math" alttext="R(r)=AJ_{1}(kr)." display="block"><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p7" class="ltx_para">
+<p class="ltx_p">Now we can apply our boundary condition at <math id="SS3.p7.m1" class="ltx_Math" alttext="r=a" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>a</mi></mrow></math>. I’ll write it out for you:</p>
+<table id="Ch2.Ex62" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex62.m1" class="ltx_Math" alttext="R(a)=AJ_{1}(ka)=0." display="block"><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Clearly, we can’t set <math id="SS3.p7.m2" class="ltx_Math" alttext="A=0" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>0</mn></mrow></math>, since that will give us a static fluid; instead, we’ll have to use the fact that the Bessel function has an infinite number of zeros, just like we did with the sine function back in Section <a href="Ch2.S2.html#SS3" title="2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.3</span></a>. Unfortunately, the Bessel zeros aren’t at nicely periodic locations like <math id="SS3.p7.m3" class="ltx_Math" alttext="n\pi" display="inline"><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></math>; as you can see in Table <a href="#Ch2.T1" title="Table 2.1 ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, they’re neither periodic nor at nice locations. Instead, we’ll have to be more general, so I’ll call the <math id="SS3.p7.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>th zero of the Bessel function <math id="SS3.p7.m5" class="ltx_Math" alttext="\lambda_{n}" display="inline"><msub><mi>λ</mi><mi>n</mi></msub></math>. That is,</p>
+<table id="Ch2.Ex63" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex63.m1" class="ltx_Math" alttext="J_{1}(\lambda_{n})=0" display="block"><mrow><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for every value of <math id="SS3.p7.m6" class="ltx_Math" alttext="\lambda_{n}" display="inline"><msub><mi>λ</mi><mi>n</mi></msub></math>. The boundary condition thus implies that <math id="SS3.p7.m7" class="ltx_Math" alttext="ka=\lambda_{n}" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><msub><mi>λ</mi><mi>n</mi></msub></mrow></math>, or</p>
+<table id="Ch2.Ex64" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex64.m1" class="ltx_Math" alttext="k=\frac{\lambda_{n}}{a}." display="block"><mrow><mrow><mi>k</mi><mo>=</mo><mfrac><msub><mi>λ</mi><mi>n</mi></msub><mi>a</mi></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p8" class="ltx_para">
+<p class="ltx_p">Let’s put our solution so far together. We’ll combine the results for <math id="SS3.p8.m1" class="ltx_Math" alttext="T(t)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="SS3.p8.m2" class="ltx_Math" alttext="R(r)" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math> to get the fluid velocity</p>
+<table id="Ch2.Ex65" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex65.m1" class="ltx_Math" alttext="u_{\theta}(r,t)=R(r)T(t)=A\,J_{1}(\lambda_{n}r/a)\,e^{-\lambda_{n}^{2}\nu t/a^%
+{2}}," display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mi>A</mi></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msubsup><mi>λ</mi><mi>n</mi><mn>2</mn></msubsup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where I’ve combined the two constants into <math id="SS3.p8.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. As is usual with separation of variables, we end up with not just <em class="ltx_emph">one</em> solution, but an <em class="ltx_emph">infinite</em> number of them. That means the most general solution is a linear combination of all of them,</p>
+<table id="Ch2.E55" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E55.m1" class="ltx_Math" alttext="u_{\theta}(r,t)=\sum_{n=1}^{\infty}A_{n}\,J_{1}(\lambda_{n}r/a)\,e^{-\lambda_{%
+n}^{2}\nu t/a^{2}}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mpadded width="+1.7pt"><msub><mi>A</mi><mi>n</mi></msub></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msubsup><mi>λ</mi><mi>n</mi><mn>2</mn></msubsup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.55)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p9" class="ltx_para">
+<p class="ltx_p">Even though we’ve been dealing with Bessel function, the process of separation of variables is the same as we went through in Section <a href="Ch2.S2.html#SS2" title="2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.2</span></a> – if you can follow that discussion, you should be okay here, too. We just have one more step: finding the values of the constants <math id="SS3.p9.m1" class="ltx_Math" alttext="A_{n}" display="inline"><msub><mi>A</mi><mi>n</mi></msub></math> that will match our initial conditions. This part is similar to before, too, but does require a bit of advanced knowledge of Bessel functions, so watch carefully.</p>
+</div>
+<div id="SS3.p10" class="ltx_para">
+<p class="ltx_p">Our initial conditions, from Equation <a href="#Ch2.E51" title="(2.51) ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.51</span></a> say</p>
+<table id="Ch2.E56" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E56.m1" class="ltx_Math" alttext="u_{\theta}(r,0)=\sum_{n=1}^{\infty}A_{n}\,J_{1}(\lambda_{n}r/a)=\Omega r." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mpadded width="+1.7pt"><msub><mi>A</mi><mi>n</mi></msub></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.56)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Just like sinusoidal functions, Bessel functions are orthogonal, although it looks a little different; it turns out that<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">9</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">9</sup>See, for example, Arfken and Weber’s <em class="ltx_emph">Mathematical Methods for Physicists</em>, Fourth Edition, p. 646.</span></span></span></p>
+<table id="Ch2.Ex66" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex66.m1" class="ltx_Math" alttext="\int_{0}^{a}J_{1}(\lambda_{n}r/a)J_{1}(\lambda_{m}r/a)\,r\,dr=0" display="block"><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>m</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mo>𝑑</mo><mi>r</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">if <math id="SS3.p10.m1" class="ltx_Math" alttext="m\neq n" display="inline"><mrow><mi>m</mi><mo>≠</mo><mi>n</mi></mrow></math>. If <math id="SS3.p10.m2" class="ltx_Math" alttext="m=n" display="inline"><mrow><mi>m</mi><mo>=</mo><mi>n</mi></mrow></math>, then the result is</p>
+<table id="Ch2.Ex67" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex67.m1" class="ltx_Math" alttext="\int_{0}^{a}J_{1}^{2}(\lambda_{n}r/a)\,r\,dr=\frac{a^{2}}{2}J_{2}^{2}(\lambda_%
+{n})" display="block"><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><msubsup><mi>J</mi><mn>1</mn><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mo>𝑑</mo><mi>r</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>a</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mi>J</mi><mn>2</mn><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(notice that’s the second order Bessel function showing up on the right hand side).</p>
+</div>
+<div id="SS3.p11" class="ltx_para">
+<p class="ltx_p">We can use these results to solve for the <math id="SS3.p11.m1" class="ltx_Math" alttext="A_{n}" display="inline"><msub><mi>A</mi><mi>n</mi></msub></math>s. Multiply both sides of Equation <a href="#Ch2.E56" title="(2.56) ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.56</span></a> by <math id="SS3.p11.m2" class="ltx_Math" alttext="r\,J_{1}(\lambda_{m}r/a)" display="inline"><mrow><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>m</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> and integrate from <math id="SS3.p11.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="SS3.p11.m4" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>:
+</p>
+<table id="Ch2.Ex68" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex68.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}A_{n}\int_{0}^{a}J_{1}(\lambda_{n}r/a)J_{1}(\lambda_{m}r/a)%
+\,r\,dr=\Omega\int_{0}^{a}r^{2}\,J_{1}(\lambda_{m}r/a)\,dr." display="block"><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>m</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mo>𝑑</mo><mi>r</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>r</mi><mn>2</mn></msup></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>m</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>r</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Orthogonality allow us to collapse the sum – only the <math id="SS3.p11.m5" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>th term survives – and, performing the integrations, we get</p>
+<table id="Ch2.Ex69" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex69.m1" class="ltx_Math" alttext="A_{n}=\frac{2\Omega a}{\lambda_{n}\,J_{2}(\lambda_{n})}." display="block"><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>a</mi></mrow><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>n</mi></msub></mpadded><mo>⁢</mo><msub><mi>J</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p12" class="ltx_para">
+<p class="ltx_p">Putting this result together with our general solution gives us, finally,</p>
+<table id="Ch2.E57" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E57.m1" class="ltx_Math" alttext="u_{\theta}(r,t)=2\Omega a\sum_{n=1}^{\infty}\frac{J_{1}(\lambda_{n}r/a)}{%
+\lambda_{n}J_{2}(\lambda_{n})}\,e^{-\lambda_{n}^{2}\nu t/a^{2}}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mpadded width="+1.7pt"><mfrac><mrow><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>J</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mpadded><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msubsup><mi>λ</mi><mi>n</mi><mn>2</mn></msubsup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.57)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Unlike our steady state solution, this one depends on the viscosity of the fluid – it controls how long it takes for the fluid to slow down. I’ve plotted the velocity in Figure <a href="#Ch2.F11" title="Figure 2.11 ‣ 2.3.3 Spin Down of Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.11</span></a>, where you can see how the fluid behaves over time, but it might be useful to take a more physical look at this problem. I have a water bottle on my desk right now, half-filled with water, with a radius of about <math id="SS3.p12.m1" class="ltx_Math" alttext="4" display="inline"><mn>4</mn></math> cm. The viscosity of water, from Table <a href="Ch1.S6.html#Ch1.T1" title="Table 1.1 ‣ 1.6 Viscosity ‣ Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>, is <math id="SS3.p12.m2" class="ltx_Math" alttext="\nu=0.01" display="inline"><mrow><mi>ν</mi><mo>=</mo><mn>0.01</mn></mrow></math> cm<math id="SS3.p12.m3" class="ltx_Math" alttext="{}^{2}" display="inline"><msup><mi></mi><mn>2</mn></msup></math>/s. Taking, as we did before, the first term only in the sum,</p>
+<table id="Ch2.Ex70" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex70.m1" class="ltx_Math" alttext="u_{\theta}(r,t)\approx\frac{2\Omega aJ_{1}(\lambda_{1}r/a)}{\lambda_{1}J_{2}(%
+\lambda_{1})}\,e^{-\lambda_{1}^{2}\nu t/a^{2}}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≈</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><msub><mi>J</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>J</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mpadded><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msubsup><mi>λ</mi><mn>1</mn><mn>2</mn></msubsup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">It’s the exponential term we really want to look at; the characteristic time is</p>
+<table id="Ch2.Ex71" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex71.m1" class="ltx_Math" alttext="\tau=\frac{a^{2}}{\nu\lambda_{1}^{2}}\approx 110\text{ s}." display="block"><mrow><mrow><mi>τ</mi><mo>=</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><mrow><mi>ν</mi><mo>⁢</mo><msubsup><mi>λ</mi><mn>1</mn><mn>2</mn></msubsup></mrow></mfrac><mo>≈</mo><mrow><mn>110</mn><mo>⁢</mo><mtext> s</mtext></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">That’s a long time for my water bottle to slow down once I’ve rotated up to some speed. However, when I eyeball it, it looks like it takes about 25 s to come to a complete stop – much quicker! The thing we’re missing in our analysis, of course, is the <em class="ltx_emph">bottom</em> of the bottle – it apparently plays an important role in the spin down of the water in the bottle.</p>
+</div>
+<figure id="Ch2.F11" class="ltx_figure"><img src="x15.png" id="Ch2.F11.g1" class="ltx_graphics ltx_centering" width="473" height="330" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.11: </span>The spin down of fluid initially rotating like a solid body at three different times.</figcaption>
+</figure>
+</section>
+<section id="SS4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3.4 </span>The Line Vortex</h2>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">Our last two examples involved fluid <em class="ltx_emph">inside</em> a cylinder; let’s flip that around and look at the fluid <em class="ltx_emph">outside</em> a solid cylinder, rotating initially at some angular speed <math id="SS4.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math> (see Figure <a href="#Ch2.F12" title="Figure 2.12 ‣ 2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.12</span></a>). As we’ve done a number of times in this Chapter, we’ll search first for a steady-state solution, and then look at time-dependence.</p>
+</div>
+<figure id="Ch2.F12" class="ltx_figure"><img src="x16.png" id="Ch2.F12.g1" class="ltx_graphics ltx_centering" width="474" height="317" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.12: </span>A solid cylinder rotating in a fluid.</figcaption>
+</figure>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">We once again have circular flow, and the steady-state is described by Equation <a href="#Ch2.E48" title="(2.48) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.48</span></a> and its general solution, Equation <a href="#Ch2.E49" title="(2.49) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.49</span></a>,</p>
+<table id="Ch2.Ex72" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex72.m1" class="ltx_Math" alttext="u_{\theta}(r)=Ar+\frac{B}{r}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>r</mi></mrow><mo>+</mo><mfrac><mi>B</mi><mi>r</mi></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Although the boundary condition is <em class="ltx_emph">also</em> the same – that <math id="SS4.p2.m1" class="ltx_Math" alttext="u_{\theta}(a)=\Omega a" display="inline"><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mi>a</mi></mrow></mrow></math> – the difference here comes from keeping the fluid velocity finite. Since the fluid extends out to infinity, we set <math id="SS4.p2.m2" class="ltx_Math" alttext="A=0" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>0</mn></mrow></math>; since there’s no fluid at <math id="SS4.p2.m3" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>, the second term won’t be a problem. Fitting the boundary condition leads to our answer,</p>
+<table id="Ch2.Ex73" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex73.m1" class="ltx_Math" alttext="u_{\theta}(r)=\frac{\Omega a^{2}}{r}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">We’ve seen this kind of flow before – it’s the line vortex from Example <a href="Ch1.S5.html#SS2" title="1.5.2 Vorticity ‣ 1.5 Incompressible and Irrotational Flow ‣ Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.2</span></a>, with <math id="SS4.p3.m1" class="ltx_Math" alttext="k=\Omega a^{2}" display="inline"><mrow><mi>k</mi><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></math>. In fact, it’s customary to write this flow as</p>
+<table id="Ch2.E58" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E58.m1" class="ltx_Math" alttext="u_{\theta}(r)=\frac{\Gamma_{0}}{2\pi r}," display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.58)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where the constant <math id="SS4.p3.m2" class="ltx_Math" alttext="\Gamma_{0}" display="inline"><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub></math> is called the <em class="ltx_emph">circulation</em>. We’ll explore the concept of circulation more in Chapter <span class="ltx_ref ltx_missing_label ltx_ref_self">LABEL:chap_complex_pot</span>.</p>
+</div>
+<div id="SS4.p4" class="ltx_para">
+<p class="ltx_p">Now let’s take the cylinder away. But we’ll do it carefully – we’ll let <math id="SS4.p4.m1" class="ltx_Math" alttext="a\to 0" display="inline"><mrow><mi>a</mi><mo>→</mo><mn>0</mn></mrow></math> at <math id="SS4.p4.m2" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>, and the radius will shrink to zero instantaneously (kind of like how the boundary started moving in Section <a href="Ch2.S2.html#SS3" title="2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.3</span></a>). That means Equation <a href="#Ch2.E58" title="(2.58) ‣ 2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.58</span></a> will give us the initial conditions, but now the evolution of the system is governed by Equation <a href="#Ch2.E47" title="(2.47) ‣ 2.3.2 Uniformly Rotating Fluid ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.47</span></a>,</p>
+<table id="Ch2.Ex74" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex74.m1" class="ltx_Math" alttext="\frac{\partial{u_{\theta}}}{\partial{t}}=\nu\left(\frac{\partial^{2}{u_{\theta%
+}}}{\partial{r}^{2}}+\frac{1}{r}\frac{\partial{u_{\theta}}}{\partial{r}}-\frac%
+{u_{\theta}}{r^{2}}\right)." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mi>θ</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>-</mo><mfrac><msub><mi>u</mi><mi>θ</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p5" class="ltx_para">
+<p class="ltx_p">Before we solve this, I want to make a small change to this differential equation. Let’s define a new variable,</p>
+<table id="Ch2.E59" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E59.m1" class="ltx_Math" alttext="\Gamma(r,t)=2\pi ru_{\theta}(r,t)." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.59)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Then, with a bit of work, the evolution equation becomes slightly simpler,</p>
+<table id="Ch2.E60" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E60.m1" class="ltx_Math" alttext="\frac{\partial{\Gamma}}{\partial{t}}=\nu\left(\frac{\partial^{2}{\Gamma}}{%
+\partial{r}^{2}}-\frac{1}{r}\frac{\partial{\Gamma}}{\partial{r}}\right)," display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi mathvariant="normal">Γ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi mathvariant="normal">Γ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>-</mo><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi mathvariant="normal">Γ</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.60)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and the initial conditions are now given by
+</p>
+<table id="Ch2.E61" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E61.m1" class="ltx_Math" alttext="\Gamma(r,0)=\Gamma_{0}." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.61)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p6" class="ltx_para">
+<p class="ltx_p">What about the boundary conditions? Well, as usual we want the flow to be finite everywhere for <math id="SS4.p6.m1" class="ltx_Math" alttext="t&gt;0" display="inline"><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow></math> (careful – right <em class="ltx_emph">at</em> <math id="SS4.p6.m2" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> the flow <math id="SS4.p6.m3" class="ltx_Math" alttext="u_{\theta}" display="inline"><msub><mi>u</mi><mi>θ</mi></msub></math> is in fact infinite, a point we’ll discuss in the next section). With our definition of <math id="SS4.p6.m4" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math>, that means we need</p>
+<table id="Ch2.E62" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E62.m1" class="ltx_Math" alttext="\Gamma(0,t)=0\quad\text{for }t&gt;0." display="block"><mrow><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.62)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p7" class="ltx_para">
+<p class="ltx_p">Now we’re ready to solve this problem. Note that it’s actually <em class="ltx_emph">scale-free</em> – there’s nothing here (once the cylinder disappears) to provide any physical scale. That suggests we can seek a self-similar solution. As we did before in Section <a href="Ch2.S2.html#SS4" title="2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.4</span></a>, we can define a new dimensionless variable,</p>
+<table id="Ch2.E63" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E63.m1" class="ltx_Math" alttext="\eta=\frac{r}{\sqrt{\nu t}}," display="block"><mrow><mrow><mi>η</mi><mo>=</mo><mfrac><mi>r</mi><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.63)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and assume that the solution is some function a <math id="SS4.p7.m1" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math> alone,</p>
+<table id="Ch2.Ex75" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex75.m1" class="ltx_Math" alttext="\Gamma(r,t)=f(\eta)." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">I’ll let you plug this into Equation <a href="#Ch2.E60" title="(2.60) ‣ 2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.60</span></a> and find the similarity solution yourself (Problem <a href="Ch2.Sx1.html#Ch2.F19" title="Figure 2.19 ‣ Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>). The answer is</p>
+<table id="Ch2.Ex76" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex76.m1" class="ltx_Math" alttext="\Gamma(r,t)=\Gamma_{0}\left(1-e^{-r^{2}/4\nu t}\right)," display="block"><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>/</mo><mn>4</mn></mrow><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">so that the fluid velocity is</p>
+<table id="Ch2.E64" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E64.m1" class="ltx_Math" alttext="u_{\theta}(r,t)=\frac{\Gamma_{0}}{2\pi r}\left(1-e^{-r^{2}/4\nu t}\right)." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>/</mo><mn>4</mn></mrow><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.64)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p8" class="ltx_para">
+<p class="ltx_p">Let’s explore this solution a bit. I’ve plotted the velocity in Figure <a href="#Ch2.F13" title="Figure 2.13 ‣ 2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.13</span></a> for a couple of different times so you can see how the speed decays. For large radii, <math id="SS4.p8.m1" class="ltx_Math" alttext="r\gg\sqrt{4\nu t}" display="inline"><mrow><mi>r</mi><mo>≫</mo><msqrt><mrow><mn>4</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mrow></math>, we can drop the exponential term in Equation <a href="#Ch2.E64" title="(2.64) ‣ 2.3.4 The Line Vortex ‣ 2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.64</span></a>, and the behaviour far from the origin still looks like a line vortex:</p>
+<table id="Ch2.Ex77" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex77.m1" class="ltx_Math" alttext="u_{\theta}\approx\frac{\Gamma_{0}}{2\pi r}." display="block"><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>≈</mo><mfrac><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">However, at small radii, <math id="SS4.p8.m2" class="ltx_Math" alttext="r\ll\sqrt{4\nu t}" display="inline"><mrow><mi>r</mi><mo>≪</mo><msqrt><mrow><mn>4</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mrow></math>, we can expand the exponential and, keeping only the first two terms, get</p>
+<table id="Ch2.Ex78" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex78.m1" class="ltx_Math" alttext="u_{\theta}\approx\left(\frac{\Gamma_{0}}{8\pi\nu t}\right)r." display="block"><mrow><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>≈</mo><mrow><mrow><mo>(</mo><mfrac><msub><mi mathvariant="normal">Γ</mi><mn>0</mn></msub><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This looks like solid body rotation again, with <math id="SS4.p8.m3" class="ltx_Math" alttext="u_{\theta}\propto r" display="inline"><mrow><msub><mi>u</mi><mi>θ</mi></msub><mo>∝</mo><mi>r</mi></mrow></math>. Thus, at small radii, the flow is completely different; it’s undergoes solid body rotation and has <em class="ltx_emph">vorticity</em>. It’s the role of vorticity we need to discuss next.</p>
+</div>
+<figure id="Ch2.F13" class="ltx_figure"><img src="x17.png" id="Ch2.F13.g1" class="ltx_graphics ltx_centering" width="539" height="294" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.13: </span>The decay of a line vortex. On the left plot, the fluid velocity is shown at two different times. On the right plot, just <math id="Ch2.F13.m2" class="ltx_Math" alttext="t=0.7" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0.7</mn></mrow></math> is shown, along with the small- and large- radii behaviour shown as dashed lines.</figcaption>
+</figure>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch2.S2.html" title="2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></a><a href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Transport of Vorticity</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Wed Jul  3 10:18:22 2019 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

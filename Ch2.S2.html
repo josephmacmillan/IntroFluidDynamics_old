@@ -1,0 +1,972 @@
+<!DOCTYPE html><html>
+<head>
+<title>2.2 Simple Viscous Flows‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics</title>
+<!--Generated on Wed Jul  3 10:18:22 2019 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on  .-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="fluids.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="up" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="up up" href="." title="Introduction to Fluid Dynamics">
+<link rel="start" href="." title="Introduction to Fluid Dynamics">
+<link rel="prev" href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="next" href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="section" href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="." title="Introduction to Fluid Dynamics" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_document">
+<a href="." title="Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Introduction to Fluid Dynamics</span></a>
+<ul class="ltx_toclist ltx_toclist_document">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>The Navier-Stokes Equations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Simple Viscous Flows</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS1" title="2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.1 </span>Poiseuille Flow in One Dimension</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS2" title="2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.2 </span>Time Dependent Flow</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS3" title="2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.3 </span>An Impulsively Moved Boundary</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS4" title="2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2.4 </span>Self-Similar Flows</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Circular Flow</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S4.html" title="2.4 Transport of Vorticity ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Transport of Vorticity</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S5.html" title="2.5 Advanced Topics 1: Deriving the Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Advanced Topics 1: Deriving the Navier-Stokes Equations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.S6.html" title="2.6 Advanced Topics 2: Boundary Layers ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.6 </span>Advanced Topics 2: Boundary Layers</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Problems</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch3.html" title="Chapter 3 Ideal Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Ideal Fluids</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch2.html" title="Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Viscous Fluids</span></a><a href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>The Navier-Stokes Equations</span></a><a href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Circular Flow</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2.2 </span>Simple Viscous Flows</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2.1 </span>Poiseuille Flow in One Dimension</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Consider fluid flowing steadily between two rigid boundaries, one at <math id="SS1.p1.m1" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and one at <math id="SS1.p1.m2" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math>, under a constant pressure gradient</p>
+<table id="Ch2.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex1.m1" class="ltx_Math" alttext="\frac{dp}{dx}=-P." display="block"><mrow><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mi>P</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> shows the set-up and our coordinate system.</p>
+</div>
+<figure id="Ch2.F1" class="ltx_figure"><object type="image/svg+xml" data="Figures/Chapter2/fig_poise_setup.svg" id="Ch2.F1.g1" class="ltx_graphics ltx_centering" width="379" height="253" alt=""></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.1: </span>The fluid will flow to the right due to the pressure gradient.</figcaption>
+</figure>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">This problem was first examined by Jean Léonard Marie Poiseuille, a physiologist interested in the flow of blood though capillaries and veins,<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>Actually, Poiseuille studied a slightly different problem – see Problem <a href="Ch2.Sx1.html#Ch2.F19" title="Figure 2.19 ‣ Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>.</span></span></span> although it also serves well as a model for air flowing through alveoli in lungs and fluid flowing through a straw. It’s also a great introduction to solving the Navier-Stokes equations, since it’s essentially a one dimensional problem, as we’ll see. You can do the slightly more complicated two dimensional problem for homework (Problem <a href="Ch2.Sx1.html#Ch2.F18" title="Figure 2.18 ‣ Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.18</span></a>).</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">The first step to solving the Navier-Stokes equations is to examine symmetries and dependencies. For example, this is clearly (at most) a two dimensional flow, with no dependence on <math id="SS1.p3.m1" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> or flow in the <math id="SS1.p3.m2" class="ltx_Math" alttext="w" display="inline"><mi>w</mi></math> direction. This assumes the ‘‘walls’’ at <math id="SS1.p3.m3" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="SS1.p3.m4" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math> are infinite in extent along the <math id="SS1.p3.m5" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>-direction, but that’s okay – it still makes this problem a good approximation in more realistic (finite) situations. This is also explicitly <em class="ltx_emph">steady</em> flow, so there’s no time dependence at all. All this suggests we can write our the fluid velocity <math id="SS1.p3.m6" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math> in terms of <math id="SS1.p3.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="SS1.p3.m8" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> only:
+</p>
+<table id="Ch2.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex2.m1" class="ltx_Math" alttext="\mathbf{u}=[u(x,y),v(x,y),0]." display="block"><mrow><mrow><mi>𝐮</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<p class="ltx_p">Furthermore, since the walls are also infinite in extent along the <math id="SS1.p4.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction, we shouldn’t expect any <math id="SS1.p4.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-dependence in <math id="SS1.p4.m3" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math>. If this seems surprising, consider moving our origin in Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> left or right – since the pressure gradient is <em class="ltx_emph">constant</em>, exactly where we put the origin along the <math id="SS1.p4.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction won’t change the velocity at all. So that means our flow dependence is now</p>
+<table id="Ch2.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex3.m1" class="ltx_Math" alttext="\mathbf{u}=[u(y),v(y),0]." display="block"><mrow><mrow><mi>𝐮</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">That’s pretty simple, but we can do even better by looking at the incompressibility condition. In our flow, <math id="SS1.p4.m5" class="ltx_Math" alttext="\partial u/\partial x=0" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> since the flow only depends on <math id="SS1.p4.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, so Equation <a href="Ch2.S1.html#Ch2.E5" title="(2.5) ‣ 2.1.1 Cartesian Coordinates ‣ 2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.5</span></a> becomes</p>
+<table id="Ch2.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex4.m1" class="ltx_Math" alttext="\frac{\partial{v}}{\partial{y}}=0." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">That means that <math id="SS1.p4.m7" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> is a constant. But remember the no-slip condition from Section <a href="Ch1.S6.html" title="1.6 Viscosity ‣ Chapter 1 Introduction ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a> – the walls are stationary, so the fluid in contact with them can’t be moving either. Since the velocity is zero at <math id="SS1.p4.m8" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, and <math id="SS1.p4.m9" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> is constant throughout the fluid, <math id="SS1.p4.m10" class="ltx_Math" alttext="v=0" display="inline"><mrow><mi>v</mi><mo>=</mo><mn>0</mn></mrow></math> everywhere.</p>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">That last argument is a little tricky, but one we’ll use quite a bit so go over again to make sure you get it. The result, at the end of the day, is that for this situation, our flow takes on the form</p>
+<table id="Ch2.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E6.m1" class="ltx_Math" alttext="\mathbf{u}=[u(y),0,0]." display="block"><mrow><mrow><mi>𝐮</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This is called steady <em class="ltx_emph">plane-parallel shear flow</em>. Although we derived this form specific to the situation shown in Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, it’s applicable to others as well – as long as the flow is two-dimensional, steady, and has that translational symmetry along the <math id="SS1.p5.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction.</p>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<p class="ltx_p">Now that we know exactly what variables the flow depends on, the Navier-Stokes equations get much simpler to write out (and solve!). You should convince yourself that the <math id="SS1.p6.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> component, Equation <a href="Ch2.S1.html#Ch2.E2" title="(2.2) ‣ 2.1.1 Cartesian Coordinates ‣ 2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2</span></a>, becomes</p>
+<table id="Ch2.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E7.m1" class="ltx_Math" alttext="0=-\frac{1}{\rho}\frac{\partial{p}}{\partial{x}}+\nu\frac{\partial^{2}{u}}{%
+\partial{y}^{2}}." display="block"><mrow><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mi>ρ</mi></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mrow></mrow><mo>+</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Notice there’s no gravity term here; I set <math id="SS1.p6.m2" class="ltx_Math" alttext="g_{x}=0" display="inline"><mrow><msub><mi>g</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow></math>. In fact, for simplicity I’ll assume there is no gravity at all in this problem, so <math id="SS1.p6.m3" class="ltx_Math" alttext="g_{y}=g_{z}=0" display="inline"><mrow><msub><mi>g</mi><mi>y</mi></msub><mo>=</mo><msub><mi>g</mi><mi>z</mi></msub><mo>=</mo><mn>0</mn></mrow></math>, too. In Problem <a href="Ch2.Sx1.html" title="Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> you can see what effect gravity has on the situation, but it won’t change the nature of it very much. The other two Navier-Stokes equations just say that the pressure doesn’t depend on <math id="SS1.p6.m4" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> or <math id="SS1.p6.m5" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>, but we’re already told that there is a constant pressure gradient in the <math id="SS1.p6.m6" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction, so that’s nothing new.</p>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<p class="ltx_p">Solving the differential equation in (<a href="#Ch2.E7" title="(2.7) ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>) is straightforward. Let’s write <math id="SS1.p7.m1" class="ltx_Math" alttext="dp/dx=-P" display="inline"><mrow><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mo>-</mo><mi>P</mi></mrow></mrow></math> and rearrange to get</p>
+<table id="Ch2.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex5.m1" class="ltx_Math" alttext="\frac{d^{2}u}{dy^{2}}=-\frac{P}{\nu\rho}." display="block"><mrow><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>u</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mfrac><mi>P</mi><mrow><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This is a second order ordinary differential equation which can be solved with two integrations to get</p>
+<table id="Ch2.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex6.m1" class="ltx_Math" alttext="u(y)=-\frac{P}{2\nu\rho}y^{2}+c_{1}y+c_{2}," display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mfrac><mi>P</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><msub><mi>c</mi><mn>2</mn></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS1.p7.m2" class="ltx_Math" alttext="c_{1}" display="inline"><msub><mi>c</mi><mn>1</mn></msub></math> and <math id="SS1.p7.m3" class="ltx_Math" alttext="c_{2}" display="inline"><msub><mi>c</mi><mn>2</mn></msub></math> are the two integration constants.</p>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<p class="ltx_p">As usual, we can find the constants by applying our <em class="ltx_emph">boundary conditions</em>. In this case, we need the fluid at the boundary to have the same velocity as the boundary – that’s the no-slip condition again. So, at the walls, we need</p>
+<table id="Ch2.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex7.m1" class="ltx_Math" alttext="u(0)=0\quad\text{and}\quad u(h)=0." display="block"><mrow><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo mathvariant="italic" separator="true"> </mo><mtext>and</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">It follows from this that <math id="SS1.p8.m1" class="ltx_Math" alttext="c_{2}=0" display="inline"><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow></math> and</p>
+<table id="Ch2.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex8.m1" class="ltx_Math" alttext="c_{1}=\frac{Ph}{2\nu\rho}," display="block"><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mi>h</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and our final solution is</p>
+<table id="Ch2.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E8.m1" class="ltx_Math" alttext="u(y)=\frac{P}{2\nu\rho}(hy-y^{2})." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>P</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The velocity profile is a parabola.</p>
+</div>
+<div id="SS1.p9" class="ltx_para">
+<p class="ltx_p">How do we visualize this flow? Streamlines won’t be any good here, since the flow is entirely in the <math id="SS1.p9.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction – the streamlines will just be horizontal. Instead, we can plot the parabola directly on the system as shown in Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, where I’ve also drawn in some representative vectors for the velocity <math id="SS1.p9.m2" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math>. In this way we can see at a glance that the flow is strongest in the middle of the walls, and drops to zero at them according to the no-slip condition.</p>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2.2 </span>Time Dependent Flow</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">The Poiseuille problem we just did is a great first example of solving the Navier-Stokes equations, but it’s also an example of <em class="ltx_emph">steady flow</em> – nothing really changes in time. There are a few ways we can adapt this problem to introduce time dependence; we’ll do two here, and you can do another one on your own if you like (Problem <a href="Ch2.Sx1.html#Ch2.F19" title="Figure 2.19 ‣ Problems ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>).</p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">To add the time-dependence here we’ll suppose that the steady flow we found in Section <a href="#SS1" title="2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.1</span></a> has been going on for awhile, and at <math id="SS2.p2.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> the pressure gradient stops suddenly:</p>
+<table id="Ch2.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex9.m1" class="ltx_Math" alttext="P=-\frac{dp}{dx}=0\quad\text{for}\quad t&gt;0." display="block"><mrow><mrow><mrow><mi>P</mi><mo>=</mo><mrow><mo>-</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mtext>for</mtext><mo mathvariant="italic" separator="true"> </mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">What happens to the fluid for <math id="SS2.p2.m2" class="ltx_Math" alttext="t&gt;0" display="inline"><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow></math>? Well, presumably it will slowly come to rest; how long does it take, and what does the flow look like until then? To answer, we’ll set up the problem the same way as above (Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> again), with the boundaries at <math id="SS2.p2.m3" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="SS2.p2.m4" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math>. This is still a plane parallel shear problem, but now that we have time-dependence, the Navier-Stokes equation becomes a partial difference equation,</p>
+<table id="Ch2.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E9.m1" class="ltx_Math" alttext="\frac{\partial{u}}{\partial{t}}=\nu\frac{\partial^{2}{u}}{\partial{y}^{2}}." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.9)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">Our boundary conditions are the same as before – that <math id="SS2.p3.m1" class="ltx_Math" alttext="u=0" display="inline"><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow></math> at the walls – but the initial condition is our steady solution, Equation <a href="#Ch2.E8" title="(2.8) ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>,</p>
+<table id="Ch2.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E10.m1" class="ltx_Math" alttext="u(y,t=0)=\frac{P}{2\nu\rho}(hy-y^{2})." display="block"><mrow><mi>u</mi><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mi>P</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mrow><mo stretchy="false">(</mo><mi>h</mi><mi>y</mi><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.10)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">To solve this partial differential equation, we’ll use a tried and true method all physicists should know: <em class="ltx_emph">separation of variables</em>. I’ll assume here you’re a little bit familiar with this technique,<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>If not, Griffiths’ <em class="ltx_emph">Introduction to Electrodynamics</em> is a great place to look; he has a whole section (3.3 in the third edition) devoted to it.</span></span></span> but I’ll still go into enough detail to jog your memory.</p>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<p class="ltx_p">To begin, we suppose that the solution, <math id="SS2.p5.m1" class="ltx_Math" alttext="u(y,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>, can be written as the product of two single-variable functions:</p>
+<table id="Ch2.E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E11.m1" class="ltx_Math" alttext="u(y,t)=Y(y)T(t)." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.11)</span></td>
+</tr>
+</table>
+<p class="ltx_p">If we plug this directly into Equation <a href="#Ch2.E9" title="(2.9) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9</span></a> – noting that the partial derivatives treat one of the functions as a constant and act as an ordinary derivative on the other – we get</p>
+<table id="Ch2.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex10.m1" class="ltx_Math" alttext="Y\frac{dT}{dt}=\nu T\frac{d^{2}Y}{dy^{2}}." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We can rearrange this a bit to get this into a form where all the dependence on time is on the left hand side, and all the <math id="SS2.p5.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-dependence is on the right,</p>
+<table id="Ch2.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex11.m1" class="ltx_Math" alttext="\frac{1}{\nu T}\frac{dT}{dt}=\frac{1}{Y}\frac{d^{2}Y}{dy^{2}}." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mi>ν</mi><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>Y</mi></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The magic of separation of variables can now happen: since <math id="SS2.p5.m3" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> and <math id="SS2.p5.m4" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> are independent variables – you can change one without changing the other – both sides of this equation must be constant! If that weren’t the case, we could change <math id="SS2.p5.m5" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> by a small amount, changing the left hand side, but leaving the right hand side the same – and the two sides would no longer be equal.</p>
+</div>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Let’s call the constant both sides are equal to <math id="SS2.p6.m1" class="ltx_Math" alttext="-k^{2}" display="inline"><mrow><mo>-</mo><msup><mi>k</mi><mn>2</mn></msup></mrow></math>; we’ll see why it’s negative in a moment, and why having it squared is a good idea. In that case, separation of variables has turned our original partial differential equation into two ordinary differential equations:</p>
+<table id="Ch3.Sx1.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E12.m1" class="ltx_Math" alttext="\displaystyle\frac{dT}{dt}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E12.m2" class="ltx_Math" alttext="\displaystyle=-k^{2}\nu T" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>T</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.12)</span></td>
+</tr>
+<tr id="Ch2.E13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E13.m1" class="ltx_Math" alttext="\displaystyle\frac{d^{2}Y}{dy^{2}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E13.m2" class="ltx_Math" alttext="\displaystyle=-k^{2}Y." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.13)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p7" class="ltx_para">
+<p class="ltx_p">The first of these equations is easy to solve; rearrange to get</p>
+<table id="Ch2.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex12.m1" class="ltx_Math" alttext="\frac{dT}{T}=-k^{2}\nu dt" display="block"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>T</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and integrate. With a bit of work, we can write the solution as</p>
+<table id="Ch2.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E14.m1" class="ltx_Math" alttext="T(t)=Ce^{-k^{2}\nu t}," display="block"><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS2.p7.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is the integration constant. We’re not quite done with this yet, though – we still don’t know the value of <math id="SS2.p7.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, or <math id="SS2.p7.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> for that matter – but let’s move on to the second equation.</p>
+</div>
+<div id="SS2.p8" class="ltx_para">
+<p class="ltx_p">Equation <a href="#Ch2.E13" title="(2.13) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.13</span></a> one should look familiar,<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">5</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">5</sup>If it doesn’t, time to brush up on some of your mathematics – having some familiarity with differential equations is necessary to be successful in learning fluid dynamics.</span></span></span> and it has the general solution</p>
+<table id="Ch2.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex13.m1" class="ltx_Math" alttext="Y(y)=A\sin(ky)+B\cos(ky)." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We can apply our boundary condition to this solution right away. First, we need the fluid to be at rest along the bottom boundary at <math id="SS2.p8.m1" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>; for that, we’ll require <math id="SS2.p8.m2" class="ltx_Math" alttext="Y(0)=0" display="inline"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. If we evaluate the solution at <math id="SS2.p8.m3" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, we get <math id="SS2.p8.m4" class="ltx_Math" alttext="Y(0)=B" display="inline"><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>B</mi></mrow></math>, meaning <math id="SS2.p8.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> must be zero. Our solution therefore becomes</p>
+<table id="Ch2.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex14.m1" class="ltx_Math" alttext="Y(y)=A\sin(ky)." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The second boundary condition is a little trickier. Let’s evaluate our solution at <math id="SS2.p8.m6" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math>:</p>
+<table id="Ch2.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex15.m1" class="ltx_Math" alttext="Y(h)=A\sin(kh)." display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Somehow, this must equal zero as well. One possibility is to make <math id="SS2.p8.m7" class="ltx_Math" alttext="A=0" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>0</mn></mrow></math> – but then <math id="SS2.p8.m8" class="ltx_Math" alttext="u=0" display="inline"><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow></math>, which doesn’t make sense. Same thing with setting <math id="SS2.p8.m9" class="ltx_Math" alttext="k=0" display="inline"><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></math>. But if we set
+</p>
+<table id="Ch2.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex16.m1" class="ltx_Math" alttext="kh=n\pi,\quad n=1,2,3,\dots," display="block"><mrow><mrow><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>h</mi></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">then that will work, since the zeros of the sine function are at every integer multiple of <math id="SS2.p8.m10" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>.</p>
+</div>
+<div id="SS2.p9" class="ltx_para">
+<p class="ltx_p">This (almost) completes our full solution; combining <math id="SS2.p9.m1" class="ltx_Math" alttext="Y(y)" display="inline"><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> with <math id="SS2.p9.m2" class="ltx_Math" alttext="T(t)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> to make the velocity, we get</p>
+<table id="Ch2.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex17.m1" class="ltx_Math" alttext="u(y,t)=Y(y)T(t)=A\sin(n\pi y/h)\,e^{-n^{2}\pi^{2}\nu t/h^{2}}," display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where I’ve grouped both constants into <math id="SS2.p9.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. But wait! This is actually an <em class="ltx_emph">infinite</em> number of solutions, since <math id="SS2.p9.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is any integrer. In fact, we can write down the <em class="ltx_emph">general</em> solution to our original partial differential equation as a superposition of all of these individual solutions,</p>
+<table id="Ch2.E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E15.m1" class="ltx_Math" alttext="u(y,t)=\sum_{n=1}^{\infty}A_{n}\sin(n\pi y/h)\,e^{-n^{2}\pi^{2}\nu t/h^{2}}." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.15)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Note that the constant <math id="SS2.p9.m5" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> could be different in each term in the sum, so it has an index <math id="SS2.p9.m6" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> on it.</p>
+</div>
+<div id="SS2.p10" class="ltx_para">
+<p class="ltx_p">All we have left to do is find the values of the <math id="SS2.p10.m1" class="ltx_Math" alttext="A_{n}" display="inline"><msub><mi>A</mi><mi>n</mi></msub></math>s, which we do by using the initial conditions. In fact, our solution can fit <em class="ltx_emph">any</em> initial conditions we want; that’s part of the magic of separation of variables. If we evaluate Equation <a href="#Ch2.E15" title="(2.15) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.15</span></a> at <math id="SS2.p10.m2" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> and equate it to our initial conditions, Equation <a href="#Ch2.E10" title="(2.10) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10</span></a>, we get</p>
+<table id="Ch2.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex18.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}A_{n}\sin(n\pi y/h)=\frac{P}{2\nu\rho}(hy-y^{2})." display="block"><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi>P</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Somehow we have to solve this equation for <math id="SS2.p10.m3" class="ltx_Math" alttext="A_{n}" display="inline"><msub><mi>A</mi><mi>n</mi></msub></math>. We can do that by application of what is sometimes called <em class="ltx_emph">Fourier’s trick</em>:<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">6</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">6</sup>In fact, you might recognize these techniques as a part of the general theory of Fourier series.</span></span></span> we’ll multiply both sides by <math id="SS2.p10.m4" class="ltx_Math" alttext="\sin(m\pi y/h)" display="inline"><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> and integrate from <math id="SS2.p10.m5" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> to <math id="SS2.p10.m6" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math>, giving</p>
+<table id="Ch2.E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E16.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}A_{n}\int_{0}^{h}\sin(m\pi y/h)\,\sin(n\pi y/h)\,dy=\frac{P%
+}{2\nu\rho}\int_{0}^{h}(hy-y^{2})\sin(m\pi y/h)\,dy." display="block"><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>h</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi>P</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>h</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.16)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p11" class="ltx_para">
+<p class="ltx_p">Now, the left hand side turns out to be <em class="ltx_emph">zero</em> if <math id="SS2.p11.m1" class="ltx_Math" alttext="n\neq m" display="inline"><mrow><mi>n</mi><mo>≠</mo><mi>m</mi></mrow></math>; the two sine functions are called <em class="ltx_emph">orthogonal</em> in that case. In the case where <math id="SS2.p11.m2" class="ltx_Math" alttext="n=m" display="inline"><mrow><mi>n</mi><mo>=</mo><mi>m</mi></mrow></math>, the integral reduces to</p>
+<table id="Ch2.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex19.m1" class="ltx_Math" alttext="\int_{0}^{h}\sin^{2}(m\pi y/h)\,dy=\frac{h}{2}." display="block"><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>h</mi></msubsup><mrow><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>y</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mi>h</mi><mn>2</mn></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We can combine these two results into one, using the Kronecker delta,</p>
+<table id="Ch2.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E17.m1" class="ltx_Math" alttext="\delta_{mn}=\begin{cases}0\quad\text{if }m\neq n,\\
+1\quad\text{if }m=n.\end{cases}" display="block"><mrow><msub><mi>δ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mrow><mn>0</mn><mo separator="true"> </mo><mrow><mtext>if </mtext><mo>⁢</mo><mi>m</mi></mrow></mrow><mo>≠</mo><mi>n</mi></mrow><mo>,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mn>1</mn><mo separator="true"> </mo><mrow><mtext>if </mtext><mo>⁢</mo><mi>m</mi></mrow></mrow><mo>=</mo><mi>n</mi></mrow><mo>.</mo></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Thus the left hand side of Equation <a href="#Ch2.E16" title="(2.16) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.16</span></a> becomes</p>
+<table id="Ch2.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex20.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}A_{n}\int_{0}^{h}\sin(m\pi y/h)\,\sin(n\pi y/h)\,dy=\frac{h%
+}{2}\sum_{n=1}^{\infty}A_{n}\delta_{mn}." display="block"><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>h</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi>h</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>δ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">But the Kronecker delta will <em class="ltx_emph">collapse</em> the sum – every term in it will be zero except the <math id="SS2.p11.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>th one, so we get</p>
+<table id="Ch2.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex21.m1" class="ltx_Math" alttext="\frac{h}{2}\sum_{n=1}^{\infty}A_{n}\delta_{mn}=\frac{h}{2}A_{m}." display="block"><mrow><mrow><mrow><mfrac><mi>h</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>δ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi>h</mi><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>A</mi><mi>m</mi></msub></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p12" class="ltx_para">
+<p class="ltx_p">Phew! That takes care of the left hand side, but we still have to do the right side. That’s a bit messy, since</p>
+<table id="Ch2.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex22.m1" class="ltx_Math" alttext="\int_{0}^{h}(hy-y^{2})\sin(m\pi y/h)\,dy=\frac{2h^{3}}{\pi^{3}m^{3}}\left(1-%
+\cos(m\pi)\right)." display="block"><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>h</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>y</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>h</mi><mn>3</mn></msup></mrow><mrow><msup><mi>π</mi><mn>3</mn></msup><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Why messy? Because the cosine evaluates to either <math id="SS2.p12.m1" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math> (if <math id="SS2.p12.m2" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> is even, and we get zero) or <math id="SS2.p12.m3" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> (if <math id="SS2.p12.m4" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> is odd, and we get <math id="SS2.p12.m5" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math>). That means we have to handle both of those cases separately. Putting both sides of Equation <a href="#Ch2.E16" title="(2.16) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.16</span></a> together and solving for <math id="SS2.p12.m6" class="ltx_Math" alttext="A_{m}" display="inline"><msub><mi>A</mi><mi>m</mi></msub></math> gives</p>
+<table id="Ch2.E18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E18.m1" class="ltx_Math" alttext="A_{m}=\begin{cases}0,&amp;m\text{ even},\\
+{4Ph^{2}}/{\pi^{3}\nu\rho m^{3}},&amp;m\text{ odd}.\end{cases}" display="block"><mrow><msub><mi>A</mi><mi>m</mi></msub><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>m</mi><mo>⁢</mo><mtext> even</mtext></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>P</mi><mo>⁢</mo><msup><mi>h</mi><mn>2</mn></msup></mrow><mo>/</mo><msup><mi>π</mi><mn>3</mn></msup></mrow><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>m</mi><mo>⁢</mo><mtext> odd</mtext></mrow><mo>.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.18)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p13" class="ltx_para">
+<p class="ltx_p">Finally, we can write down our full solution to this problem. Inserting this expression for <math id="SS2.p13.m1" class="ltx_Math" alttext="A_{m}" display="inline"><msub><mi>A</mi><mi>m</mi></msub></math> into Equation <a href="#Ch2.E15" title="(2.15) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.15</span></a> gives us</p>
+<table id="Ch2.E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E19.m1" class="ltx_Math" alttext="u(y,t)=\frac{4Ph^{2}}{\pi^{3}\nu\rho}\sum_{n=1,3,5\dots}^{\infty}\frac{1}{n^{3%
+}}\sin(n\pi y/h)\,e^{-n^{2}\pi^{2}\nu t/h^{2}}." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>P</mi><mo>⁢</mo><msup><mi>h</mi><mn>2</mn></msup></mrow><mrow><msup><mi>π</mi><mn>3</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mrow><mn>5</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.19)</span></td>
+</tr>
+</table>
+<p class="ltx_p">That’s not particularly nice looking answer, and it took us some work to get there, but we’re done. This gives us the fluid velocity at any time <math id="SS2.p13.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> between the walls.</p>
+</div>
+<div id="SS2.p14" class="ltx_para">
+<p class="ltx_p">To take a look at the velocity, let’s plot it up at a few times <math id="SS2.p14.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, using the same convention we used in Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, where the distance along the <math id="SS2.p14.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-direction is on the vertical axis, and the fluid velocity is along the horizontal. Figure <a href="#Ch2.F2" title="Figure 2.2 ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2</span></a> shows the flow at three times, one of which is <math id="SS2.p14.m3" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>. It’s clear that, over time, the velocity does in fact go to zero. If we want to estimate the length of time it takes to come to rest, we can look just at the <math id="SS2.p14.m4" class="ltx_Math" alttext="n=1" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></math> term in the solution – it’s the dominant term, since each term after it gets smaller by a factor of <math id="SS2.p14.m5" class="ltx_Math" alttext="1/n^{3}" display="inline"><mrow><mn>1</mn><mo>/</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></math>. In that case, we can write the time factor as</p>
+<table id="Ch2.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex23.m1" class="ltx_Math" alttext="e^{-\pi^{2}\nu t/h^{2}}=e^{-t/\tau}," display="block"><mrow><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>/</mo><mi>τ</mi></mrow></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS2.p14.m6" class="ltx_Math" alttext="\tau=h^{2}/\pi^{2}\nu" display="inline"><mrow><mi>τ</mi><mo>=</mo><mrow><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>/</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mi>ν</mi></mrow></mrow></math> is the characteristic time. Thus the speed in the channel slows to about 37% of its initial amount in a time <math id="SS2.p14.m7" class="ltx_Math" alttext="\tau" display="inline"><mi>τ</mi></math>. By a few characteristic times the fluid is practically at rest.</p>
+</div>
+<figure id="Ch2.F2" class="ltx_figure"><img src="x8.png" id="Ch2.F2.g1" class="ltx_graphics ltx_centering" width="474" height="329" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.2: </span>Poiseuille flow is slowing down over time once the pressure gradient shuts off. The velocity is in units of <math id="Ch2.F2.m3" class="ltx_Math" alttext="4Ph^{2}/\pi^{3}\nu\rho" display="inline"><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>P</mi><mo>⁢</mo><msup><mi>h</mi><mn>2</mn></msup></mrow><mo>/</mo><msup><mi>π</mi><mn>3</mn></msup></mrow><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>ρ</mi></mrow></math>, and the time is in units of the characteristic time <math id="Ch2.F2.m4" class="ltx_Math" alttext="\tau=h^{2}/\pi^{2}\nu" display="inline"><mrow><mi>τ</mi><mo>=</mo><mrow><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>/</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mi>ν</mi></mrow></mrow></math>. This plot used about 15 terms in the sum in Equation <a href="#Ch2.E19" title="(2.19) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>.</figcaption>
+</figure>
+</section>
+<section id="SS3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2.3 </span>An Impulsively Moved Boundary</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">I’d like to do one more example with the two rigid boundaries before moving on – mostly because in this example there’s an interesting twist with how we’ll have to solve the partial differential equation.</p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">This time, we’ll start with the fluid at rest in between the two boundaries; the set up is the same as in the above examples and once again Figure <a href="#Ch2.F1" title="Figure 2.1 ‣ 2.2.1 Poiseuille Flow in One Dimension ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> shows the coordinate system. In this case, though, there won’t be any pressure gradient – we’ll take <math id="SS3.p2.m1" class="ltx_Math" alttext="dp/dx=0" display="inline"><mrow><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> for the whole problem. Once again, since nothing changes physically about the problem, we have a fluid dependent only on <math id="SS3.p2.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and flowing only in the <math id="SS3.p2.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-direction, so this is still plane-parallel shear flow.</p>
+</div>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">We’ll put the fluid in motion by, at <math id="SS3.p3.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>, suddenly <em class="ltx_emph">jerking</em> the bottom boundary (the one at <math id="SS3.p3.m2" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>) – we’ll pull it to the right with constant speed <math id="SS3.p3.m3" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>. There won’t be a period of acceleration here – it’s <em class="ltx_emph">impulsively</em> moved and goes from at rest to moving instantaneously. Thanks to the no-slip theorem, the bottom boundary will pull on the fluid elements in contact with it, which will in turn exert viscous forces on the fluid above, and so on. To find out how the fluid responds to the impulsively moved boundary, we’ll need to once again solve the Navier-Stokes equations.</p>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<p class="ltx_p">They’re identical, though, to the above time-dependent problem, Equation <a href="#Ch2.E9" title="(2.9) ‣ 2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9</span></a>,</p>
+<table id="Ch2.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E20.m1" class="ltx_Math" alttext="\frac{\partial{u}}{\partial{t}}=\nu\frac{\partial^{2}{u}}{\partial{y}^{2}}." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.20)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The initial condition, however, is that the fluid starts at rest,</p>
+<table id="Ch2.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E21.m1" class="ltx_Math" alttext="u(y,0)=0." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.21)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The boundary conditions come from the no-slip condition, with the top boundary at rest but the bottom moving at constant velocity:</p>
+<table id="Ch3.Sx1.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E22.m1" class="ltx_Math" alttext="\displaystyle u(0,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E22.m2" class="ltx_Math" alttext="\displaystyle=U\quad\text{for }t&gt;0," display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mi>U</mi></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.22)</span></td>
+</tr>
+<tr id="Ch2.E23" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E23.m1" class="ltx_Math" alttext="\displaystyle u(h,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E23.m2" class="ltx_Math" alttext="\displaystyle=0." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.23)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p5" class="ltx_para">
+<p class="ltx_p">To solve the differential equation (<a href="#Ch2.E20" title="(2.20) ‣ 2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.20</span></a>), we’ll once gain use technique of separation of variables. However, there’s a problem in this case – the boundary condition is nonhomogeneous (since <math id="SS3.p5.m1" class="ltx_Math" alttext="u(0,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is non-zero). Unfortunately, separation of variables breaks down with nonhomogeneous boundary conditions (go ahead and try it on your own!).</p>
+</div>
+<div id="SS3.p6" class="ltx_para">
+<p class="ltx_p">We can fix up the problem to deal with that, though, using a standard technique. First, let’s imagine that the flow is actually <em class="ltx_emph">steady</em> – there’s no time dependence. In that case, our equation simply becomes</p>
+<table id="Ch2.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex24.m1" class="ltx_Math" alttext="\frac{d^{2}u_{\text{steady}}}{dy^{2}}=0," display="block"><mrow><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>u</mi><mtext>steady</mtext></msub></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which has the solution</p>
+<table id="Ch2.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex25.m1" class="ltx_Math" alttext="u_{\text{steady}}(y)=c_{1}+c_{2}y." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mtext>steady</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">To fit the boundary conditions, we need <math id="SS3.p6.m1" class="ltx_Math" alttext="c_{1}=U" display="inline"><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>=</mo><mi>U</mi></mrow></math> and <math id="SS3.p6.m2" class="ltx_Math" alttext="c_{2}=-U/h" display="inline"><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>=</mo><mrow><mo>-</mo><mrow><mi>U</mi><mo>/</mo><mi>h</mi></mrow></mrow></mrow></math>, so we have</p>
+<table id="Ch2.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex26.m1" class="ltx_Math" alttext="u_{\text{steady}}(y)=U\left(1-\frac{y}{h}\right)." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mtext>steady</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>y</mi><mi>h</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This flow satisfies the differential equation and the boundary conditions, but not the initial conditions – there’s no time dependence at all. However, it might be reasonable to think that, after a long time has passed, the flow will eventually reach a steady state like this. In that case, it makes sense to write the <em class="ltx_emph">full</em> solution as</p>
+<table id="Ch2.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex27.m1" class="ltx_Math" alttext="u(y,t)=u_{\text{steady}}(y)+u_{1}(y,t)," display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>u</mi><mtext>steady</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS3.p6.m3" class="ltx_Math" alttext="u_{1}(y,t)" display="inline"><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an unknown ‘‘transient’’ function; clearly, we want <math id="SS3.p6.m4" class="ltx_Math" alttext="u_{1}\to 0" display="inline"><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>→</mo><mn>0</mn></mrow></math> as <math id="SS3.p6.m5" class="ltx_Math" alttext="t\to\infty" display="inline"><mrow><mi>t</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math> so that we get our long-time steady state.</p>
+</div>
+<div id="SS3.p7" class="ltx_para">
+<p class="ltx_p">If we plug this form of <math id="SS3.p7.m1" class="ltx_Math" alttext="u(y,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> into Equation <a href="#Ch2.E20" title="(2.20) ‣ 2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.20</span></a>, our differential equation becomes</p>
+<table id="Ch2.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E24.m1" class="ltx_Math" alttext="\frac{\partial{u_{1}}}{\partial{t}}=\nu\frac{\partial^{2}{u_{1}}}{\partial{y}^%
+{2}}." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>u</mi><mn>1</mn></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><msub><mi>u</mi><mn>1</mn></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Notice that <math id="SS3.p7.m2" class="ltx_Math" alttext="u_{\text{steady}}" display="inline"><msub><mi>u</mi><mtext>steady</mtext></msub></math> has disappeared from the differential equation, and it looks like we’ve just swapped out <math id="SS3.p7.m3" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> for <math id="SS3.p7.m4" class="ltx_Math" alttext="u_{1}" display="inline"><msub><mi>u</mi><mn>1</mn></msub></math>. What have gained? Well, <math id="SS3.p7.m5" class="ltx_Math" alttext="u_{1}" display="inline"><msub><mi>u</mi><mn>1</mn></msub></math> has different boundary conditions than <math id="SS3.p7.m6" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> – notably, it now goes to zero at both <math id="SS3.p7.m7" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math> <em class="ltx_emph">and</em> <math id="SS3.p7.m8" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, where the steady state solution cancels the original condition – and our boundary conditions are now homogeneous:</p>
+<table id="Ch3.Sx1.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Ch2.E25" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E25.m1" class="ltx_Math" alttext="\displaystyle u_{1}(0,t)" display="inline"><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E25.m2" class="ltx_Math" alttext="\displaystyle=0\quad\text{for }t&gt;0," display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.25)</span></td>
+</tr>
+<tr id="Ch2.E26" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch2.E26.m1" class="ltx_Math" alttext="\displaystyle u_{1}(h,t)" display="inline"><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch2.E26.m2" class="ltx_Math" alttext="\displaystyle=0." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.26)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The initial condition has also changed, since we need to cancel off the steady state term there, too:</p>
+<table id="Ch2.E27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E27.m1" class="ltx_Math" alttext="u_{1}(y,0)=-u_{\text{steady}}=-U\left(1-\frac{y}{h}\right)." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><msub><mi>u</mi><mtext>steady</mtext></msub></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>y</mi><mi>h</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.27)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p8" class="ltx_para">
+<p class="ltx_p">Now we’re ready to solve by separation of variables. The process and most of the steps are identical to what we just went over in Section <a href="#SS2" title="2.2.2 Time Dependent Flow ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2.2</span></a>, so I’ll skip most of the details. Thanks to the same differential equation and boundary conditions for <math id="SS3.p8.m1" class="ltx_Math" alttext="u_{1}" display="inline"><msub><mi>u</mi><mn>1</mn></msub></math>, the solution is once again</p>
+<table id="Ch2.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex28.m1" class="ltx_Math" alttext="u_{1}(y,t)=\sum_{n=1}^{\infty}A_{n}\sin(n\pi y/h)\,e^{-n^{2}\pi^{2}\nu t/h^{2}}." display="block"><mrow><mrow><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">All that’s left is to find the <math id="SS3.p8.m2" class="ltx_Math" alttext="A_{n}" display="inline"><msub><mi>A</mi><mi>n</mi></msub></math>s that fit the initial conditions, Equation <a href="#Ch2.E27" title="(2.27) ‣ 2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.27</span></a>. Using Fourier’s trick again (multiplying by <math id="SS3.p8.m3" class="ltx_Math" alttext="\sin(m\pi y/h)" display="inline"><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> and integrating) leads to</p>
+<table id="Ch2.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex29.m1" class="ltx_Math" alttext="A_{n}=-\frac{2U}{n\pi}." display="block"><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>U</mi></mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Finally, adding in the steady-state solution to get <math id="SS3.p8.m4" class="ltx_Math" alttext="u(y,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>, we have</p>
+<table id="Ch2.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex30.m1" class="ltx_Math" alttext="u(y,t)=U\left[1-\frac{y}{h}-\frac{2}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}\sin(n%
+\pi y/h)\,e^{-n^{2}\pi^{2}\nu t/h^{2}}\right]." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>[</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>y</mi><mi>h</mi></mfrac><mo>-</mo><mrow><mfrac><mn>2</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi>h</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow></mrow><mo>]</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p9" class="ltx_para">
+<p class="ltx_p">Figure <a href="#Ch2.F3" title="Figure 2.3 ‣ 2.2.3 An Impulsively Moved Boundary ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.3</span></a> shows the fluid velocity <math id="SS3.p9.m1" class="ltx_Math" alttext="u(y,t)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> at a couple of different times. The characteristic time is the same as in the previous problem; after a few <math id="SS3.p9.m2" class="ltx_Math" alttext="\tau=h^{2}/\pi^{2}\nu" display="inline"><mrow><mi>τ</mi><mo>=</mo><mrow><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>/</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mi>ν</mi></mrow></mrow></math>, the fluid reaches its steady state.</p>
+</div>
+<figure id="Ch2.F3" class="ltx_figure"><img src="x9.png" id="Ch2.F3.g1" class="ltx_graphics ltx_centering" width="473" height="330" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.3: </span>A boundary suddenly jerked into motion will eventually move the fluid into a steady state. The time is in units of the characteristic time <math id="Ch2.F3.m2" class="ltx_Math" alttext="\tau" display="inline"><mi>τ</mi></math>.</figcaption>
+</figure>
+</section>
+<section id="SS4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2.4 </span>Self-Similar Flows</h2>
+
+<div id="SS4.p1" class="ltx_para">
+<p class="ltx_p">The techniques we used to solve the three previous problems – integrating an ordinary differential equation, using separation of variables to solve a partial differential equation, and then doing the same thing but with the added twist of using a steady state solution to handle nonhomogeneous boundary conditions – are all standard techniques physicists use to solve differential equations. All three problems also had very similar set-ups – two boundaries and plane parallel shear flow.</p>
+</div>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">I’d like to do one last example of time-dependent plane parallel shear flow before moving on to other kinds of situations, but this time I’ll remove the boundary at <math id="SS4.p2.m1" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math> – we only have one boundary in this new problem, and it’s along the <math id="SS4.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. Fluid exists only in the region <math id="SS4.p2.m3" class="ltx_Math" alttext="y&gt;0" display="inline"><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, but it can extend up to infinity – see Figure <a href="#Ch2.F4" title="Figure 2.4 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4</span></a>.</p>
+</div>
+<figure id="Ch2.F4" class="ltx_figure"><img src="x10.png" id="Ch2.F4.g1" class="ltx_graphics ltx_centering" width="474" height="317" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.4: </span>A single boundary is suddenly jerked into motion. This problem is <em class="ltx_emph">self-similar</em> because it doesn’t have a scale.</figcaption>
+</figure>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">As with the previous example, this boundary will be impulsively put into motion at <math id="SS4.p3.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> with a velocity (to the right) of <math id="SS4.p3.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>. We’ve already gone through the arguments in the last section about what kind of flow this is, and they all hold here, too – the only difference is in the boundary conditions. That means we once again have the partial differential equation</p>
+<table id="Ch2.E28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E28.m1" class="ltx_Math" alttext="\frac{\partial{u}}{\partial{t}}=\nu\frac{\partial^{2}{u}}{\partial{y}^{2}}." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>u</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.28)</span></td>
+</tr>
+</table>
+<p class="ltx_p">to solve for our system. The initial condition is just that the fluid is at rest,</p>
+<table id="Ch2.E29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E29.m1" class="ltx_Math" alttext="u(y,0)=0," display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.29)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and our usual no-slip condition at the boundary still applies,</p>
+<table id="Ch2.E30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E30.m1" class="ltx_Math" alttext="u(0,t)=U." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>U</mi></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.30)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We have one other condition, as well, for the fluid far away from the boundary; this is where our problem will start to deviate from the others. We’d expect that the motion of the boundary will affect the fluid above it, and this motion will propagate upward over time. However, the fluid <em class="ltx_emph">infinitely</em> far away will need an infinite amount of time to feel the motion of the boundary, which suggests that we require</p>
+<table id="Ch2.E31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E31.m1" class="ltx_Math" alttext="u(\infty,t)=0." display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.31)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS4.p4" class="ltx_para">
+<p class="ltx_p">Now, we could, if we wanted, go through the same procedure as before – find a steady-state solution, apply separation of variables, and build our final answer as a superposition of solutions. But that process is cumbersome (and we’ve already done it once!), and this problem can actually be solved in a completely different way, first done by Stokes.<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">7</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">7</sup>This example is actually known as Stokes’ first problem.</span></span></span></p>
+</div>
+<div id="SS4.p5" class="ltx_para">
+<p class="ltx_p">Consider, first, some dimensional analysis. Examining Equations <a href="#Ch2.E28" title="(2.28) ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.28</span></a>-<a href="#Ch2.E31" title="(2.31) ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.31</span></a> we can see that our problem depends, at best, on four variables: <math id="SS4.p5.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>, <math id="SS4.p5.m2" class="ltx_Math" alttext="\nu" display="inline"><mi>ν</mi></math>, <math id="SS4.p5.m3" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, and <math id="SS4.p5.m4" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. But if we write the velocity as a non-dimensional variable,
+</p>
+<table id="Ch2.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex31.m1" class="ltx_Math" alttext="\tilde{u}=\frac{u}{U}," display="block"><mrow><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mi>u</mi><mi>U</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">then our differential equation becomes</p>
+<table id="Ch2.E32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E32.m1" class="ltx_Math" alttext="\frac{\partial{\tilde{u}}}{\partial{t}}=\nu\frac{\partial^{2}{\tilde{u}}}{%
+\partial{y}^{2}}." display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>ν</mi><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.32)</span></td>
+</tr>
+</table>
+<p class="ltx_p">More importantly, our boundary condition at <math id="SS4.p5.m5" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> becomes</p>
+<table id="Ch2.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex32.m1" class="ltx_Math" alttext="\tilde{u}(0,t)=1." display="block"><mrow><mrow><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This means that the solution for the non-dimensional <math id="SS4.p5.m6" class="ltx_Math" alttext="\tilde{u}" display="inline"><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></math> can only depend on <em class="ltx_emph">three</em> variables: <math id="SS4.p5.m7" class="ltx_Math" alttext="\nu" display="inline"><mi>ν</mi></math>, <math id="SS4.p5.m8" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, and <math id="SS4.p5.m9" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. I’ll write out the solution to the Navier-Stokes equation, then, as</p>
+<table id="Ch2.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex33.m1" class="ltx_Math" alttext="\tilde{u}=f(\nu,y,t)," display="block"><mrow><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ν</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS4.p5.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is some unknown function. We do know one thing about it, though: since <math id="SS4.p5.m11" class="ltx_Math" alttext="\tilde{u}" display="inline"><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></math> is dimensionless, so too must be <math id="SS4.p5.m12" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.</p>
+</div>
+<div id="SS4.p6" class="ltx_para">
+<p class="ltx_p">Okay, where are we going with this? Well, since <math id="SS4.p6.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> must be dimensionless, and since it can only depend on <math id="SS4.p6.m2" class="ltx_Math" alttext="\nu" display="inline"><mi>ν</mi></math>, <math id="SS4.p6.m3" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, and <math id="SS4.p6.m4" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> and no other quantity, we need to rearrange those three variables into a combination that is dimensionless. It turns out there is only <em class="ltx_emph">one</em> way to do this, the combination</p>
+<table id="Ch2.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex34.m1" class="ltx_Math" alttext="\frac{y}{\sqrt{\nu t}}." display="block"><mrow><mfrac><mi>y</mi><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mfrac><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">All this is to suggest that, in our final solution to Equation <a href="#Ch2.E32" title="(2.32) ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.32</span></a>, <math id="SS4.p6.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and <math id="SS4.p6.m6" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> and <math id="SS4.p6.m7" class="ltx_Math" alttext="\nu" display="inline"><mi>ν</mi></math> can <em class="ltx_emph">only</em> appear in the above combination. This powerful idea will allow us to turn the partial differential equation into an ordinary one that we can integrate to solve – much simpler than going through separation of variables.</p>
+</div>
+<div id="SS4.p7" class="ltx_para">
+<p class="ltx_p">This whole idea – having the solution depend only on a dimensionless quantity – is called <em class="ltx_emph">self-similarity</em>, for reasons we’ll see in a bit. It’s due to the fact that there is no <em class="ltx_emph">physical scale</em> involved in the problem – it doesn’t involve a length scale at all, nor a time scale. This is in contrast to the previous problem with a boundary at <math id="SS4.p7.m1" class="ltx_Math" alttext="y=h" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>h</mi></mrow></math> – the value of <math id="SS4.p7.m2" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> sets the physical scale along the <math id="SS4.p7.m3" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-direction, and we wouldn’t be able to write down a single combination of variables that was dimensionless in that case. If you’re finding it difficult to imagine the scale-free nature of the problem, imagine ‘‘zooming’’ in or out in Figure <a href="#Ch2.F4" title="Figure 2.4 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4</span></a> – because the fluid goes to infinity above the boundary, there’s nothing to tell you that actually <em class="ltx_emph">have</em> zoomed in or out, and the figure would look exactly the same.
+</p>
+</div>
+<div id="SS4.p8" class="ltx_para">
+<p class="ltx_p">Self-similarity is a powerful concept in fluid dynamics and many other fields, from mathematics to finance. The most common example of it is probably the nature of some fractals, such as the Koch snowflake shown in Figure <a href="#Ch2.F5" title="Figure 2.5 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.5</span></a>. As you zoom in on the snowflake, the perimeter continues to look exactly the same. A great example of a self-similar system in nature is the fronds on a fern, as shown in Figure <a href="#Ch2.F6" title="Figure 2.6 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.6</span></a>. Note that the overall structure of the fern is repeated on smaller scales, all the way down to the individual leaves. As we’ll see, along with the scale-free situation, our solution to this problem will also be self-similar in the same way.</p>
+</div>
+<figure id="Ch2.F5" class="ltx_figure"><object type="image/svg+xml" data="Figures/Chapter2/fig_koch.svg" id="Ch2.F5.g1" class="ltx_graphics ltx_centering" width="271" height="271" alt=""></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.5: </span>The procedure for constructing a Koch snowflake, a good example of exact self-similarity. <a href="https://commons.wikimedia.org/wiki/File:KochFlake.svg" title="" class="ltx_ref">Image by Wxs / CC BY-SA 3.0.</a> </figcaption>
+</figure>
+<figure id="Ch2.F6" class="ltx_figure"><img src="Figures/Chapter2/fig_fern.png" id="Ch2.F6.g1" class="ltx_graphics ltx_centering" width="541" height="169" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.6: </span>A fern is an example of self-similarity found in nature. <a href="https://www.flickr.com/photos/78523101@N04/7572281628" title="" class="ltx_ref">Photo by Jason Hine / CC BY-NC 2.0.</a> </figcaption>
+</figure>
+<div id="SS4.p9" class="ltx_para">
+<p class="ltx_p">It’s time to exploit this idea mathematically. Let’s define a new variable,</p>
+<table id="Ch2.E33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E33.m1" class="ltx_Math" alttext="\eta=\frac{y}{\sqrt{\nu t}}." display="block"><mrow><mrow><mi>η</mi><mo>=</mo><mfrac><mi>y</mi><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.33)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Our goal will be to rewrite the partial differential equation (<a href="#Ch2.E32" title="(2.32) ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.32</span></a>) in terms of <math id="SS4.p9.m1" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math> rather than <math id="SS4.p9.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and <math id="SS4.p9.m3" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. We can do this with the chain rule, so that</p>
+<table id="Ch2.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex35.m1" class="ltx_Math" alttext="\frac{\partial{\tilde{u}}}{\partial{t}}=\frac{df}{d\eta}\frac{\partial{\eta}}{%
+\partial{t}}=-\frac{y}{2\nu^{1/2}t^{3/2}}f^{\prime}," display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>η</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>η</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mi>y</mi><mrow><mn>2</mn><mo>⁢</mo><msup><mi>ν</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mi>t</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the prime indicates a derivative with respect to <math id="SS4.p9.m4" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math>, and</p>
+<table id="Ch2.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex36.m1" class="ltx_Math" alttext="\frac{\partial^{2}{\tilde{u}}}{\partial{y}^{2}}=\frac{d^{2}f}{d\eta^{2}}\left(%
+\frac{\partial{\eta}}{\partial{y}}\right)^{2}+\frac{\partial{f}}{\partial{\eta%
+}}\frac{\partial^{2}{\eta}}{\partial{y}^{2}}=\left(\frac{1}{\nu t}\right)f^{%
+\prime\prime}." display="block"><mrow><mrow><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mrow><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>η</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>η</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>η</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>η</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>f</mi><mi>′′</mi></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Careful with the second derivative calculation – it uses a product rule as well as the chain rule, so go over it yourself to make sure you known where the terms come from. Plugging these two derivatives back into Equation <a href="#Ch2.E32" title="(2.32) ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.32</span></a> gives, after a bit of rearranging,</p>
+<table id="Ch2.E34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E34.m1" class="ltx_Math" alttext="f^{\prime\prime}+\frac{1}{2}\eta f^{\prime}=0." display="block"><mrow><mrow><mrow><msup><mi>f</mi><mi>′′</mi></msup><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>η</mi><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.34)</span></td>
+</tr>
+</table>
+<p class="ltx_p">As promised, we now have only one ordinary differential equation to worry about – and note that this equation contains only dimensionless quantities.</p>
+</div>
+<div id="SS4.p10" class="ltx_para">
+<p class="ltx_p">It’s straightforward to solve this differential equation as well. First, let</p>
+<table id="Ch2.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex37.m1" class="ltx_Math" alttext="g=f^{\prime}," display="block"><mrow><mrow><mi>g</mi><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">so that <math id="SS4.p10.m1" class="ltx_Math" alttext="g^{\prime}=f^{\prime\prime}" display="inline"><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>=</mo><msup><mi>f</mi><mi>′′</mi></msup></mrow></math>, and the equation becomes the first order</p>
+<table id="Ch2.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex38.m1" class="ltx_Math" alttext="g^{\prime}+\frac{1}{2}\eta g=0." display="block"><mrow><mrow><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>η</mi><mo>⁢</mo><mi>g</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Writing all the <math id="SS4.p10.m2" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math>s on one side and the <math id="SS4.p10.m3" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math>s on the other allows us to integrate it, to get</p>
+<table id="Ch2.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex39.m1" class="ltx_Math" alttext="g(\eta)=f^{\prime}=Be^{-\tfrac{1}{4}\eta^{2}}," display="block"><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>η</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS4.p10.m4" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> is the integration constant. Integrating one more time will get us <math id="SS4.p10.m5" class="ltx_Math" alttext="f(\eta" display="inline"><mrow><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>η</mi></mrow></mrow></math>),</p>
+<table id="Ch2.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex40.m1" class="ltx_Math" alttext="f(\eta)=A+B\int_{0}^{\eta}e^{-\tfrac{1}{4}\eta^{\prime 2}}\,d\eta^{\prime}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>η</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>η</mi><mrow><mi mathsize="200%" mathvariant="normal">′</mi><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo>𝑑</mo><msup><mi>η</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here, <math id="SS4.p10.m6" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is another integration constant (to account for the definite integral), and I’ve written <math id="SS4.p10.m7" class="ltx_Math" alttext="\eta^{\prime}" display="inline"><msup><mi>η</mi><mo>′</mo></msup></math> as the integration variable to avoid confusion. Unfortunately, actually solving the integral in this equation is not possible in closed form – in fact, the integral</p>
+<table id="Ch2.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex41.m1" class="ltx_Math" alttext="\frac{1}{\sqrt{\pi}}\int_{0}^{x}e^{-\tfrac{1}{4}u^{2}}du\equiv\text{erf}(x)," display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>π</mi></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo>𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>≡</mo><mrow><mtext>erf</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is called the <em class="ltx_emph">error function</em>, and is used extensively in probability and statistics. Since we can only evaluate the error function numerically, I’ll continue to just write out the integral.</p>
+</div>
+<div id="SS4.p11" class="ltx_para">
+<p class="ltx_p">We can find the constants <math id="SS4.p11.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="SS4.p11.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> with our boundary conditions and the initial condition. Before we do that, though, we need to express them in terms of <math id="SS4.p11.m3" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math> rather than <math id="SS4.p11.m4" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and <math id="SS4.p11.m5" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. The first boundary condition is</p>
+<table id="Ch2.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex42.m1" class="ltx_Math" alttext="\tilde{u}(0,t)=1." display="block"><mrow><mrow><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">But at this place (<math id="SS4.p11.m6" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>) and time (<math id="SS4.p11.m7" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>), we have <math id="SS4.p11.m8" class="ltx_Math" alttext="\eta=0" display="inline"><mrow><mi>η</mi><mo>=</mo><mn>0</mn></mrow></math>, so the boundary condition for <math id="SS4.p11.m9" class="ltx_Math" alttext="\eta=0" display="inline"><mrow><mi>η</mi><mo>=</mo><mn>0</mn></mrow></math> becomes</p>
+<table id="Ch2.Ex43" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex43.m1" class="ltx_Math" alttext="f(0)=1." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The second boundary condition likewise becomes</p>
+<table id="Ch2.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex44.m1" class="ltx_Math" alttext="f(\infty)=0." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Also, recall that the initial condition was <math id="SS4.p11.m10" class="ltx_Math" alttext="\tilde{u}(y,0)=0" display="inline"><mrow><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. In this case, <math id="SS4.p11.m11" class="ltx_Math" alttext="\eta\to\infty" display="inline"><mrow><mi>η</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></math>, since <math id="SS4.p11.m12" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is in the denominator, and we get again the same expression as the second boundary condition – as expected, we have only two boundary conditions for our second order differential equation.</p>
+</div>
+<div id="SS4.p12" class="ltx_para">
+<p class="ltx_p">Using these two boundary conditions leads to <math id="SS4.p12.m1" class="ltx_Math" alttext="A=1" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>1</mn></mrow></math> and <math id="SS4.p12.m2" class="ltx_Math" alttext="B=-1/\sqrt{\pi}" display="inline"><mrow><mi>B</mi><mo>=</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><msqrt><mi>π</mi></msqrt></mrow></mrow></mrow></math>. We can write our final solution, then (using <math id="SS4.p12.m3" class="ltx_Math" alttext="u=U\tilde{u}" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mover accent="true"><mi>u</mi><mo stretchy="false">~</mo></mover></mrow></mrow></math>), as</p>
+<table id="Ch2.E35" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E35.m1" class="ltx_Math" alttext="u(y,t)=f(\eta)=U\left[1-\frac{1}{\sqrt{\pi}}\int_{0}^{\eta}e^{-\tfrac{1}{4}%
+\eta^{\prime 2}}d\eta^{\prime}\right]," display="block"><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>[</mo><mrow><mn>1</mn><mo>-</mo><mrow><mfrac><mn>1</mn><msqrt><mi>π</mi></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>η</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mstyle scriptlevel="-1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>η</mi><mrow><mi mathsize="200%" mathvariant="normal">′</mi><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo>𝑑</mo><msup><mi>η</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow></mrow><mo>]</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.35)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where, of course, <math id="SS4.p12.m4" class="ltx_Math" alttext="\eta=y/\sqrt{\nu t}" display="inline"><mrow><mi>η</mi><mo>=</mo><mrow><mi>y</mi><mo>/</mo><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mrow></mrow></math>.</p>
+</div>
+<div id="SS4.p13" class="ltx_para">
+<p class="ltx_p">We can take a look at the velocity for a couple of different times to see how the fluid responds to the impulsively moved boundary – see Figure <a href="#Ch2.F7" title="Figure 2.7 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>. As expected, at later time the fluid is moving faster, and <em class="ltx_emph">more</em> of the fluid is moving. This is evident in Figure <a href="#Ch2.F7" title="Figure 2.7 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>; at <math id="SS4.p13.m1" class="ltx_Math" alttext="t=1" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></math>, the fluid above <math id="SS4.p13.m2" class="ltx_Math" alttext="y\sim 3" display="inline"><mrow><mi>y</mi><mo>∼</mo><mn>3</mn></mrow></math> practically isn’t moving, while for <math id="SS4.p13.m3" class="ltx_Math" alttext="t=10" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></math>, the motion of the fluid extends up to <math id="SS4.p13.m4" class="ltx_Math" alttext="y\sim 10" display="inline"><mrow><mi>y</mi><mo>∼</mo><mn>10</mn></mrow></math>.</p>
+</div>
+<figure id="Ch2.F7" class="ltx_figure"><img src="x11.png" id="Ch2.F7.g1" class="ltx_graphics ltx_centering" width="540" height="299" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.7: </span>The fluid velocity for an impulsively moved boundary at <math id="Ch2.F7.m4" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>. Note how long it takes for the fluid to respond – at the later time on the right (ten times longer than the left), the velocity has increased at all points but still drops to zero around <math id="Ch2.F7.m5" class="ltx_Math" alttext="y=10" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>10</mn></mrow></math>. I set <math id="Ch2.F7.m6" class="ltx_Math" alttext="\nu=1" display="inline"><mrow><mi>ν</mi><mo>=</mo><mn>1</mn></mrow></math> for convenience. </figcaption>
+</figure>
+<div id="SS4.p14" class="ltx_para">
+<p class="ltx_p">I mentioned earlier that this solution would be self-similar, but that’s not very noticeable in Figure <a href="#Ch2.F7" title="Figure 2.7 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>. That’s because both time <em class="ltx_emph">and</em> space must be scaled together to get the same velocity curve. In fact, if we zoom out on the <math id="SS4.p14.m1" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis as we move forward in time, the motion of the fluid should always be the same. We can see that in Figure <a href="#Ch2.F8" title="Figure 2.8 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>, which changes the scale of the <math id="SS4.p14.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis for the right-hand plot at <math id="SS4.p14.m3" class="ltx_Math" alttext="t=10" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></math>. Rather than going from <math id="SS4.p14.m4" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> to <math id="SS4.p14.m5" class="ltx_Math" alttext="y=10" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>10</mn></mrow></math>, as in Figure <a href="#Ch2.F7" title="Figure 2.7 ‣ 2.2.4 Self-Similar Flows ‣ 2.2 Simple Viscous Flows ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>, we go from <math id="SS4.p14.m6" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> to</p>
+<table id="Ch2.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.Ex45.m1" class="ltx_Math" alttext="y={10}{\sqrt{\nu t}}" display="block"><mrow><mi>y</mi><mo>=</mo><mrow><mn>10</mn><mo>⁢</mo><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(remember, <math id="SS4.p14.m7" class="ltx_Math" alttext="\eta=y/\sqrt{\nu t}" display="inline"><mrow><mi>η</mi><mo>=</mo><mrow><mi>y</mi><mo>/</mo><msqrt><mrow><mi>ν</mi><mo>⁢</mo><mi>t</mi></mrow></msqrt></mrow></mrow></math>). Thus, as <math id="SS4.p14.m8" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> changes, so too does the scale of <math id="SS4.p14.m9" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>. In this case, both velocity curves look identical, and the solution is self-similar.</p>
+</div>
+<figure id="Ch2.F8" class="ltx_figure"><img src="x12.png" id="Ch2.F8.g1" class="ltx_graphics ltx_centering" width="540" height="302" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2.8: </span>The fluid velocity for an impulsively moved boundary at <math id="Ch2.F8.m3" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>. This time, I’ve changed the <math id="Ch2.F8.m4" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis scale so that the two curves are self-similar.</figcaption>
+</figure>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch2.S1.html" title="2.1 The Navier-Stokes Equations ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>The Navier-Stokes Equations</span></a><a href="Ch2.S3.html" title="2.3 Circular Flow ‣ Chapter 2 Viscous Fluids ‣ Introduction to Fluid Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Circular Flow</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Wed Jul  3 10:18:22 2019 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+\documentclass[10pt]{book}
+
+
+\title{Introduction to Fluid Dynamics}
+\author{Joseph D. MacMillan}
+\date{\vspace{2in} \small This work is licensed under a \href{https://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-ShareAlike 4.0 International License}. \\ \vspace{0.5in} This version of the book was created on \today. You can always find the most up-to-date version at {\footnotesize \url{https://faculty.uoit.ca/macmillan/IntroFluidDynamics} (web)} or \\ {\footnotesize \url{https://faculty.uoit.ca/macmillan/IntroFluidDynamics/IntroFluidDynamics.pdf} (PDF)}.}
+
+\usepackage[a5paper]{geometry}
+
+\usepackage{graphicx}
+\usepackage{color} 
+
+\usepackage{amsmath, amssymb}
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+\newcommand{\uu}{\mathbf{u}}
+\newcommand{\grad}{\boldsymbol{\nabla}}
+\renewcommand{\div}{\boldsymbol{\nabla} \cdot}
+\newcommand{\curl}{\boldsymbol{\nabla} \times}
+\newcommand{\dfdx}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\ddfdx}[2]{\frac{\partial^2 {#1}}{\partial {#2}^2}}
+\newcommand{\vort}{\boldsymbol{\omega}}
+
+\newcounter{example}[chapter]
+\def\theexample{\thechapter.\arabic{example}}
+\newenvironment{example}[1][ ]{\refstepcounter{example}
+\noindent
+\nopagebreak
+\vspace{5pt}
+\nopagebreak
+\hrule
+\nopagebreak
+\vspace{5pt}
+\nopagebreak
+\textbf{Example \theexample \ -- #1.}
+\nopagebreak
+
+\noindent \leftskip4em
+}
+{ 
+%\noindent \rule{\textwidth}{.4pt}
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+}
+
+\newcounter{problem}[chapter]
+\def\theproblem{\thechapter.\arabic{problem}}
+\newenvironment{problem}[1][ ]{\refstepcounter{problem} \noindent \textbf{Problem \theproblem \ -- #1.}}{\vspace{0.1in}}
+
+\usepackage[hang, small, bf]{caption}
+\captionsetup[table]{position=top}
+\captionsetup[figure]{position=bottom}
+
+%\usepackage[toc, page]{appendix}
+
+%\usepackage{listings}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Introduction to Fluid Dynamics}}
+\hypersetup{pdfauthor={Joseph D. MacMillan}}
+\urlstyle{rm}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\include{1_introduction}
+
+\include{2_viscous_fluids}
+
+\include{3_ideal_fluids}
+
+
+\end{document}

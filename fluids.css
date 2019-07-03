@@ -172,7 +172,7 @@ font-weight: 300;
 .ltx_TOC h6 {
  font-family:'Roboto Slab', serif;
   font-weight:400;
-  font-size:14px;
+  font-size:18px;
 }
 
 
@@ -181,9 +181,13 @@ font-size:38px;
 font-weight: 300;
 }
 
-.ltx_personname {
-font-size:28px;
+.ltx_role_author .ltx_personname {
+font-size:24px;
 font-weight: 300;
+}
+
+.ltx_authors {
+    margin: 20px 0px 80px 0px;
 }
 
 .ltx_date {

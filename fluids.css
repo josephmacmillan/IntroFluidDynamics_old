@@ -169,6 +169,12 @@ font-weight: 300;
   font-size:14px;
 }
 
+.ltx_TOC h6 {
+ font-family:'Roboto Slab', serif;
+  font-weight:400;
+  font-size:14px;
+}
+
 
 .ltx_title_document {
 font-size:38px;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  4 JUL 2019 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  5 JUL 2019 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,12 +921,12 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 Underfull \vbox (badness 6300) has occurred while \output is active []
 
  [8]
-<Figures/Chapter1/fig_vector_plot.pdf, id=283, 289.02342pt x 283.17345pt>
+<Figures/Chapter1/fig_vector_plot.pdf, id=284, 283.89822pt x 280.89674pt>
 File: Figures/Chapter1/fig_vector_plot.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_vector_plot.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_vector_plot.pdf  used on input li
 ne 100.
-(pdftex.def)             Requested size: 147.38463pt x 144.40358pt.
+(pdftex.def)             Requested size: 147.38463pt x 145.82712pt.
 
 [9 <./Figures/Chapter1/fig_vector_plot.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
@@ -942,15 +942,15 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 126.
  [10]
-<Figures/Chapter1/fig_streamline_example.pdf, id=324, 290.0103pt x 286.09978pt>
-
+<Figures/Chapter1/fig_streamline_example.pdf, id=328, 284.57011pt x 283.69485pt
+>
 File: Figures/Chapter1/fig_streamline_example.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_streamline_example.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_streamline_example.pdf  used on i
 nput line 146.
-(pdftex.def)             Requested size: 147.38463pt x 145.39818pt.
+(pdftex.def)             Requested size: 147.38463pt x 146.93344pt.
  [11] [12 <./Figures/Chapter1/fig_streamline_example.pdf>] [13] [14]
-<Figures/Chapter1/fig_closed_surface.pdf, id=369, 289.08pt x 289.08pt>
+<Figures/Chapter1/fig_closed_surface.pdf, id=376, 289.08pt x 289.08pt>
 File: Figures/Chapter1/fig_closed_surface.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_closed_surface.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_closed_surface.pdf  used on input
@@ -963,20 +963,20 @@ ress-ible? Let's check.
  []
 
 [16]
-<Figures/Chapter1/fig_shear_vector.pdf, id=390, 287.71863pt x 283.17345pt>
+<Figures/Chapter1/fig_shear_vector.pdf, id=398, 285.91425pt x 280.89674pt>
 File: Figures/Chapter1/fig_shear_vector.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_shear_vector.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_shear_vector.pdf  used on input l
 ine 314.
-(pdftex.def)             Requested size: 147.38463pt x 145.06035pt.
-<Figures/Chapter1/fig_line_vortex_vector.pdf, id=395, 289.08pt x 289.08pt>
+(pdftex.def)             Requested size: 147.38463pt x 144.79845pt.
+<Figures/Chapter1/fig_line_vortex_vector.pdf, id=403, 289.08pt x 289.08pt>
 File: Figures/Chapter1/fig_line_vortex_vector.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_line_vortex_vector.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_line_vortex_vector.pdf  used on i
 nput line 330.
 (pdftex.def)             Requested size: 147.38463pt x 147.38474pt.
  [17]
-<Figures/Chapter1/fig_vorticity_meter.jpg, id=410, 154.6578pt x 140.2038pt>
+<Figures/Chapter1/fig_vorticity_meter.jpg, id=418, 154.6578pt x 140.2038pt>
 File: Figures/Chapter1/fig_vorticity_meter.jpg Graphic file (type jpg)
 <use Figures/Chapter1/fig_vorticity_meter.jpg>
 Package pdftex.def Info: Figures/Chapter1/fig_vorticity_meter.jpg  used on inpu
@@ -986,7 +986,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 340.
  [18 <./Figures/Chapter1/fig_shear_vector.pdf>] [19 <./Figures/Chapter1/fig_lin
 e_vortex_vector.pdf> <./Figures/Chapter1/fig_vorticity_meter.jpg>]
-<Figures/Chapter1/fig_boundary_layer.pdf, id=436, 433.62pt x 289.08pt>
+<Figures/Chapter1/fig_boundary_layer.pdf, id=452, 433.62pt x 289.08pt>
 File: Figures/Chapter1/fig_boundary_layer.pdf Graphic file (type pdf)
 <use Figures/Chapter1/fig_boundary_layer.pdf>
 Package pdftex.def Info: Figures/Chapter1/fig_boundary_layer.pdf  used on input
@@ -994,7 +994,7 @@ Package pdftex.def Info: Figures/Chapter1/fig_boundary_layer.pdf  used on input
 (pdftex.def)             Requested size: 206.33757pt x 137.55702pt.
 
 [20 <./Figures/Chapter1/fig_boundary_layer.pdf>]
-<Figures/Chapter1/fig_boundary_layer_sep.png, id=458, 324.46219pt x 255.95625pt
+<Figures/Chapter1/fig_boundary_layer_sep.png, id=475, 324.46219pt x 255.95625pt
 >
 File: Figures/Chapter1/fig_boundary_layer_sep.png Graphic file (type png)
 <use Figures/Chapter1/fig_boundary_layer_sep.png>
@@ -1011,7 +1011,7 @@ Chapter 2.
 
 
 ] [26]
-<Figures/Chapter2/fig_poise_setup.pdf, id=507, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_poise_setup.pdf, id=524, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_poise_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_poise_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_poise_setup.pdf  used on input li
@@ -1033,12 +1033,12 @@ i/m/it/10 dy:
  []
 
 [34]
-<Figures/Chapter2/fig_poise_time.pdf, id=623, 407.76584pt x 283.98344pt>
+<Figures/Chapter2/fig_poise_time.pdf, id=624, 405.69594pt x 280.96423pt>
 File: Figures/Chapter2/fig_poise_time.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_poise_time.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_poise_time.pdf  used on input lin
 e 270.
-(pdftex.def)             Requested size: 206.33757pt x 143.70299pt.
+(pdftex.def)             Requested size: 206.33757pt x 142.89972pt.
  [35] [36 <./Figures/Chapter2/fig_poise_time.pdf>]
 Overfull \hbox (3.86601pt too wide) in paragraph at lines 287--288
 []\T1/LinuxLibertineT-TLF/m/n/10 They're iden-ti-cal, though, to the above time
@@ -1046,14 +1046,14 @@ Overfull \hbox (3.86601pt too wide) in paragraph at lines 287--288
  []
 
 [37] [38]
-<Figures/Chapter2/fig_poise_imp.pdf, id=676, 405.5187pt x 283.17345pt>
+<Figures/Chapter2/fig_poise_imp.pdf, id=686, 403.78185pt x 280.89674pt>
 File: Figures/Chapter2/fig_poise_imp.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_poise_imp.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_poise_imp.pdf  used on input line
  355.
-(pdftex.def)             Requested size: 206.33757pt x 144.08383pt.
+(pdftex.def)             Requested size: 206.33757pt x 143.54689pt.
  [39 <./Figures/Chapter2/fig_poise_imp.pdf>]
-<Figures/Chapter2/fig_self_sim_setup.pdf, id=694, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_self_sim_setup.pdf, id=713, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_self_sim_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_self_sim_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_self_sim_setup.pdf  used on input
@@ -1066,13 +1066,13 @@ Overfull \hbox (0.8249pt too wide) in paragraph at lines 399--400
  []
 
 [41] [42]
-<Figures/Chapter2/fig_koch.pdf, id=731, 272.51813pt x 272.51813pt>
+<Figures/Chapter2/fig_koch.pdf, id=752, 272.51813pt x 272.51813pt>
 File: Figures/Chapter2/fig_koch.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_koch.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_koch.pdf  used on input line 430.
 
 (pdftex.def)             Requested size: 147.38463pt x 147.38214pt.
-<Figures/Chapter2/fig_fern.png, id=734, 599.23875pt x 186.6975pt>
+<Figures/Chapter2/fig_fern.png, id=755, 599.23875pt x 186.6975pt>
 File: Figures/Chapter2/fig_fern.png Graphic file (type png)
 <use Figures/Chapter2/fig_fern.png>
 Package pdftex.def Info: Figures/Chapter2/fig_fern.png  used on input line 437.
@@ -1080,21 +1080,21 @@ Package pdftex.def Info: Figures/Chapter2/fig_fern.png  used on input line 437.
 (pdftex.def)             Requested size: 294.76926pt x 91.83867pt.
  [43 <./Figures/Chapter2/fig_koch.pdf>] [44 <./Figures/Chapter2/fig_fern.png>] 
 [45]
-<Figures/Chapter2/fig_ss_vel1.pdf, id=762, 513.03722pt x 283.17345pt>
+<Figures/Chapter2/fig_ss_vel1.pdf, id=783, 510.63885pt x 283.69485pt>
 File: Figures/Chapter2/fig_ss_vel1.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_ss_vel1.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_ss_vel1.pdf  used on input line 5
 06.
-(pdftex.def)             Requested size: 235.8163pt x 130.15765pt.
+(pdftex.def)             Requested size: 235.8163pt x 131.01201pt.
  [46 <./Figures/Chapter2/fig_ss_vel1.pdf>]
-<Figures/Chapter2/fig_ss_vel2.pdf, id=783, 513.03722pt x 286.09978pt>
+<Figures/Chapter2/fig_ss_vel2.pdf, id=811, 510.63885pt x 283.69485pt>
 File: Figures/Chapter2/fig_ss_vel2.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_ss_vel2.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_ss_vel2.pdf  used on input line 5
 19.
-(pdftex.def)             Requested size: 235.8163pt x 131.50272pt.
+(pdftex.def)             Requested size: 235.8163pt x 131.01201pt.
  [47 <./Figures/Chapter2/fig_ss_vel2.pdf>] [48]
-<Figures/Chapter2/fig_cyl_setup.pdf, id=816, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_cyl_setup.pdf, id=849, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_cyl_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_cyl_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_cyl_setup.pdf  used on input line
@@ -1104,19 +1104,19 @@ Package pdftex.def Info: Figures/Chapter2/fig_cyl_setup.pdf  used on input line
 Underfull \vbox (badness 1484) has occurred while \output is active []
 
  [49 <./Figures/Chapter2/fig_cyl_setup.pdf>] [50] [51] [52]
-<Figures/Chapter2/fig_bessel.pdf, id=876, 398.3537pt x 286.09978pt>
+<Figures/Chapter2/fig_bessel.pdf, id=910, 394.33086pt x 283.69485pt>
 File: Figures/Chapter2/fig_bessel.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_bessel.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_bessel.pdf  used on input line 70
 6.
-(pdftex.def)             Requested size: 206.33757pt x 148.19212pt.
+(pdftex.def)             Requested size: 206.33757pt x 148.4442pt.
  [53] [54 <./Figures/Chapter2/fig_bessel.pdf>] [55] [56]
-<Figures/Chapter2/fig_spin_vel.pdf, id=925, 405.5187pt x 283.17345pt>
+<Figures/Chapter2/fig_spin_vel.pdf, id=961, 403.71432pt x 280.89674pt>
 File: Figures/Chapter2/fig_spin_vel.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_spin_vel.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_spin_vel.pdf  used on input line 
 799.
-(pdftex.def)             Requested size: 206.33757pt x 144.08383pt.
+(pdftex.def)             Requested size: 206.33757pt x 143.56833pt.
 
 Overfull \hbox (2.26686pt too wide) in paragraph at lines 810--811
 \T1/LinuxLibertineT-TLF/m/n/10 Our last two ex-am-ples in-volved fluid \T1/Linu
@@ -1125,7 +1125,7 @@ xLibertineT-TLF/m/it/10 in-side \T1/LinuxLibertineT-TLF/m/n/10 a cylin-der; let
  []
 
 [57 <./Figures/Chapter2/fig_spin_vel.pdf>]
-<Figures/Chapter2/fig_line_setup.pdf, id=947, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_line_setup.pdf, id=984, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_line_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_line_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_line_setup.pdf  used on input lin
@@ -1137,28 +1137,28 @@ LaTeX Warning: Reference `chap_complex_pot' on page 58 undefined on input line
 833.
 
 [58 <./Figures/Chapter2/fig_line_setup.pdf>] [59]
-<Figures/Chapter2/fig_line_vortex.pdf, id=989, 526.5372pt x 286.09978pt>
+<Figures/Chapter2/fig_line_vortex.pdf, id=1027, 524.10281pt x 283.69485pt>
 File: Figures/Chapter2/fig_line_vortex.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_line_vortex.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_line_vortex.pdf  used on input li
 ne 889.
-(pdftex.def)             Requested size: 235.8163pt x 128.13252pt.
+(pdftex.def)             Requested size: 235.8163pt x 127.64418pt.
  [60]
-Underfull \vbox (badness 1158) has occurred while \output is active []
+Underfull \vbox (badness 1253) has occurred while \output is active []
 
  [61 <./Figures/Chapter2/fig_line_vortex.pdf>]
-<Figures/Chapter2/fig_vorticity_transport.pdf, id=1022, 518.52405pt x 286.09978
+<Figures/Chapter2/fig_vorticity_transport.pdf, id=1062, 516.40468pt x 283.69485
 pt>
 File: Figures/Chapter2/fig_vorticity_transport.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_vorticity_transport.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_vorticity_transport.pdf  used on 
 input line 922.
-(pdftex.def)             Requested size: 235.8163pt x 130.11447pt.
+(pdftex.def)             Requested size: 235.8163pt x 129.54886pt.
  [62 <./Figures/Chapter2/fig_vorticity_transport.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63]
-<Figures/Chapter2/fig_boundary_stream.pdf, id=1053, 280.00021pt x 179.86288pt>
+<Figures/Chapter2/fig_boundary_stream.pdf, id=1096, 280.00021pt x 179.86288pt>
 File: Figures/Chapter2/fig_boundary_stream.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_boundary_stream.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_boundary_stream.pdf  used on inpu
@@ -1166,22 +1166,22 @@ t line 961.
 (pdftex.def)             Requested size: 176.86334pt x 113.61609pt.
 
 [64 <./Figures/Chapter2/fig_boundary_stream.pdf>] [65] [66]
-<Figures/Chapter2/fig_boundary_result1.pdf, id=1094, 258.03038pt x 286.09978pt>
+<Figures/Chapter2/fig_boundary_result1.pdf, id=1138, 257.40036pt x 283.69485pt>
 
 File: Figures/Chapter2/fig_boundary_result1.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_boundary_result1.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_boundary_result1.pdf  used on inp
 ut line 1036.
-(pdftex.def)             Requested size: 117.9059pt x 130.73439pt.
-<Figures/Chapter2/fig_boundary_result2.pdf, id=1095, 504.03722pt x 234.64304pt>
+(pdftex.def)             Requested size: 117.9059pt x 129.94711pt.
+<Figures/Chapter2/fig_boundary_result2.pdf, id=1139, 502.26886pt x 232.36633pt>
 
 File: Figures/Chapter2/fig_boundary_result2.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_boundary_result2.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_boundary_result2.pdf  used on inp
 ut line 1043.
-(pdftex.def)             Requested size: 265.29053pt x 123.50092pt.
+(pdftex.def)             Requested size: 265.29053pt x 122.73517pt.
  [67 <./Figures/Chapter2/fig_boundary_result1.pdf>]
-<Figures/Chapter2/fig_incline_setup.pdf, id=1125, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_incline_setup.pdf, id=1166, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_incline_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_incline_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_incline_setup.pdf  used on input 
@@ -1194,10 +1194,10 @@ Overfull \hbox (44.53781pt too wide) detected at line 1082
  []
 
 
-Underfull \vbox (badness 5519) has occurred while \output is active []
+Underfull \vbox (badness 5939) has occurred while \output is active []
 
  [68 <./Figures/Chapter2/fig_boundary_result2.pdf>]
-<Figures/Chapter2/fig_poise_2d_setup.pdf, id=1149, 433.62pt x 289.08pt>
+<Figures/Chapter2/fig_poise_2d_setup.pdf, id=1192, 433.62pt x 289.08pt>
 File: Figures/Chapter2/fig_poise_2d_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter2/fig_poise_2d_setup.pdf>
 Package pdftex.def Info: Figures/Chapter2/fig_poise_2d_setup.pdf  used on input
@@ -1215,14 +1215,14 @@ Chapter 3.
 
 
 ] [74] [75]
-<Figures/Chapter3/fig_leaky_bucket.pdf, id=1267, 289.08pt x 289.08pt>
+<Figures/Chapter3/fig_leaky_bucket.pdf, id=1311, 289.08pt x 289.08pt>
 File: Figures/Chapter3/fig_leaky_bucket.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_leaky_bucket.pdf>
 Package pdftex.def Info: Figures/Chapter3/fig_leaky_bucket.pdf  used on input l
 ine 110.
 (pdftex.def)             Requested size: 147.38463pt x 147.38474pt.
  [76 <./Figures/Chapter3/fig_leaky_bucket.pdf>] [77] [78]
-<Figures/Chapter3/fig_water_bucket.jpg, id=1305, 481.8pt x 361.35pt>
+<Figures/Chapter3/fig_water_bucket.jpg, id=1352, 481.8pt x 361.35pt>
 File: Figures/Chapter3/fig_water_bucket.jpg Graphic file (type jpg)
 <use Figures/Chapter3/fig_water_bucket.jpg>
 Package pdftex.def Info: Figures/Chapter3/fig_water_bucket.jpg  used on input l
@@ -1230,7 +1230,7 @@ ine 212.
 (pdftex.def)             Requested size: 147.38463pt x 110.53413pt.
 
 [79 <./Figures/Chapter3/fig_water_bucket.jpg>] [80]
-<Figures/Chapter3/fig_paraboloid.pdf, id=1331, 433.62pt x 289.08pt>
+<Figures/Chapter3/fig_paraboloid.pdf, id=1378, 433.62pt x 289.08pt>
 File: Figures/Chapter3/fig_paraboloid.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_paraboloid.pdf>
 Package pdftex.def Info: Figures/Chapter3/fig_paraboloid.pdf  used on input lin
@@ -1249,7 +1249,7 @@ l, is the phys-i-cally mean-
  []
 
 [83]
-<Figures/Chapter3/fig_cyl_setup.pdf, id=1369, 433.62pt x 289.08pt>
+<Figures/Chapter3/fig_cyl_setup.pdf, id=1421, 433.62pt x 289.08pt>
 File: Figures/Chapter3/fig_cyl_setup.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_cyl_setup.pdf>
 Package pdftex.def Info: Figures/Chapter3/fig_cyl_setup.pdf  used on input line
@@ -1262,14 +1262,14 @@ Overfull \hbox (0.18358pt too wide) in paragraph at lines 425--426
  []
 
 [86] [87]
-<Figures/Chapter3/fig_cylinder_stream.pdf, id=1413, 399.138pt x 286.09978pt>
+<Figures/Chapter3/fig_cylinder_stream.pdf, id=1467, 393.69781pt x 283.69485pt>
 File: Figures/Chapter3/fig_cylinder_stream.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_cylinder_stream.pdf>
 Package pdftex.def Info: Figures/Chapter3/fig_cylinder_stream.pdf  used on inpu
 t line 468.
-(pdftex.def)             Requested size: 206.33757pt x 147.90399pt.
+(pdftex.def)             Requested size: 206.33757pt x 148.68661pt.
  [88 <./Figures/Chapter3/fig_cylinder_stream.pdf>]
-<Figures/Chapter3/fig_cylinder_pressure.pdf, id=1425, 373.10136pt x 253.28806pt
+<Figures/Chapter3/fig_cylinder_pressure.pdf, id=1479, 373.10136pt x 253.28806pt
 >
 File: Figures/Chapter3/fig_cylinder_pressure.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_cylinder_pressure.pdf>
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: Figures/Chapter3/fig_cylinder_pressure.pdf  used on in
 put line 507.
 (pdftex.def)             Requested size: 235.8163pt x 160.0902pt.
  [89] [90 <./Figures/Chapter3/fig_cylinder_pressure.pdf>] [91]
-<Figures/Chapter3/fig_cyl_force.pdf, id=1452, 289.08pt x 289.08pt>
+<Figures/Chapter3/fig_cyl_force.pdf, id=1506, 289.08pt x 289.08pt>
 File: Figures/Chapter3/fig_cyl_force.pdf Graphic file (type pdf)
 <use Figures/Chapter3/fig_cyl_force.pdf>
 Package pdftex.def Info: Figures/Chapter3/fig_cyl_force.pdf  used on input line
@@ -1376,27 +1376,21 @@ lbtn_76gpa5.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/libertine/Lin
 LibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinL
-ibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/newtx/fxlri-5letters.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/newtx/rtxmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/r
-txr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
-no/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/zxlr.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/zxlri.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/newtx/zxlzi.pfb>
-Output written on main.pdf (94 pages, 2943543 bytes).
+ibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/fxlri-5l
+etters.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/fxlri-7lette
+rs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/newtx/txbsys.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/newtx/zxlri.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/newtx/zxlzi.pfb>
+Output written on main.pdf (94 pages, 2702476 bytes).
 PDF statistics:
- 1662 PDF objects out of 1728 (max. 8388607)
- 1456 compressed objects within 15 object streams
+ 1704 PDF objects out of 1728 (max. 8388607)
+ 1498 compressed objects within 15 object streams
  343 named destinations out of 1000 (max. 500000)
  488 words of extra memory for PDF output out of 10000 (max. 10000000)
 

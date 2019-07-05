@@ -32,8 +32,10 @@
 \contentsline {section}{\numberline {3.2}Bernoulli's Principle}{74}{section.3.2}
 \contentsline {section}{\numberline {3.3}The Vorticity Equation}{77}{section.3.3}
 \contentsline {section}{\numberline {3.4}Example: Uniformly Rotating Fluid}{79}{section.3.4}
-\contentsline {section}{\numberline {3.5}The Velocity Potential and Laplace's Equation}{81}{section.3.5}
+\contentsline {section}{\numberline {3.5}The Velocity Potential and Laplace's Equation}{82}{section.3.5}
 \contentsline {section}{\numberline {3.6}Example: Flow Past a Cylinder}{84}{section.3.6}
 \contentsline {section}{Problems}{90}{section*.40}
 \contentsline {chapter}{\numberline {A}Figures and Examples -- Jupyter Notebooks}{93}{appendix.A}
 \contentsline {section}{\numberline {A.1}Chapter 1}{93}{section.A.1}
+\contentsline {section}{\numberline {A.2}Chapter 2}{94}{section.A.2}
+\contentsline {section}{\numberline {A.3}Chapter 3}{95}{section.A.3}
